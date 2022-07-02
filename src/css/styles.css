@@ -1,0 +1,449 @@
+.Barra {
+  background-color: white;
+  width: 1600px;
+  height: 140px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.Barra main {
+  color: yellow;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin: 10px;
+  padding: 20px;
+}
+
+.Barra nav {
+  color: white;
+  font-size: 16px;
+  margin: 20px;
+  padding: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+a {
+  color: #cba012;
+  justify-items: left;
+  margin: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 23px;
+}
+
+.caja {
+  background-color: #666666;
+  width: 1600px;
+  height: 150px;
+  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  display: block;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.caja .Buscador {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 25px;
+  padding: 0px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.caja .Buscador .lupa {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+}
+
+.caja .Buscador .carrito {
+  width: 40px;
+}
+
+body {
+  width: 1600px;
+  background-color: #232526;
+}
+
+header {
+  background-image: url(../imagenes/foodtruck2.jpg);
+  width: 1600px;
+  height: 625px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: static;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .Banner {
+  color: white;
+  font-size: 50px;
+  margin: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+}
+
+header .contenedor {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 60px;
+  margin: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  text-align: justify;
+}
+
+
+.bienvenida{
+  text-align: center;
+  align-content: space-between;
+}
+
+h1 {
+  color: #b21030;
+  font-size: 45px;
+  margin: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+  color: #d59004;
+  font-size: 30px;
+  margin-top: 60px;
+  margin: 15px;
+  padding: 40px;
+  font-family: sans-serif;
+}
+
+h3 {
+  color: #cb1e1e;
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: top;
+  margin: 50px;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h5 {
+  color: #cb1e1e;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 10px;
+  bottom: 20px;
+}
+
+img {
+  margin: 10px;
+  margin-top: 20px;
+}
+
+input {
+  color: #342f2f;
+  background-color: #FFFFFF;
+  font-size: 15px;
+  margin: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.video {
+  display: inline-block;
+  margin: 15px;
+}
+
+nav .Box {
+  background-color: #6a6a68;
+  width: 355px;
+  height: 240px;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+nav .Box2 {
+  background-color: #6a6a68;
+  width: 355px;
+  height: 280px;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+.cont {
+  background-color: black;
+  display: block;
+  overflow-x: hidden;
+  width: 260px;
+  height: 270px;
+  margin: 30px;
+  padding: 0px;
+  border-radius: 5%;
+}
+
+.contain {
+  background-color: white;
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+  margin: 25px;
+  padding: 10px;
+  margin-top: 5%;
+  position: relative;
+}
+
+.bottom {
+  color: white;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.Box {
+  background-color: #6a6a68;
+  width: 355px;
+  height: 240px;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+.Box .btn {
+  color: white;
+  margin: 10px;
+  display: flexbox;
+  margin-top: 10px;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+p {
+  color: white;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 10px;
+}
+
+.contain2 {
+  background-color: #625e5e;
+  width: 260px;
+  height: 380px;
+  padding: 10px;
+  margin: 60px;
+  border-radius: 5%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-inline-box;
+}
+
+article {
+  background-color: #353535;
+  display: block;
+  overflow-x: hidden;
+  width: 540px;
+  height: 300px;
+  margin: 30px;
+  border-radius: 5%;
+}
+
+.grillado {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.2rem;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-auto-flow: dense;
+}
+
+.grillado .vertical {
+  height: 50vh;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.grillado .btn {
+  color: white;
+  margin: 10px;
+  display: flexbox;
+  margin-top: 10px;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.grillado > div > img {
+  margin: 15px;
+  width: 80%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.vertical {
+  height: 50vh;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.grande {
+  height: 80vh;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.horizontal {
+  height: 60vh;
+  grid-column: span 2;
+}
+
+section {
+  color: #f0e408;
+  margin-left: 0px;
+  margin-top: 20px;
+  padding: 100px;
+}
+
+hr {
+  color: white;
+  margin: 30px;
+  border-style: dashed;
+}
+
+.checkbox {
+  background-color: whitesmoke;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#ECE9E6));
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 380px;
+  height: 420px;
+  margin: 50px;
+  border-radius: 5%;
+}
+
+.checkbox form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px;
+}
+
+.checkbox form legend {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #ee380f;
+}
+
+.checkbox form ul {
+  color: white;
+  font-size: 15px;
+  margin: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+  color: white;
+  margin: 5px;
+}
+
+ol {
+  color: brown;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+
+.boton{
+  margin: 20px;
+  color:#cb1e1e;
+}
+
+.btn{
+  color:whitesmoke;
+}
+
+.mapouter {
+  margin: 30px;
+}
+
+footer .Pie {
+  background-image: url("../imagenes/burguer footer.jpg");
+  width: 1600px;
+  height: 430px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+  display: flexbox;
+}
+
+footer .widget {
+  color: #e70505;
+  font-size: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .center-footer {
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 320px) {
+  .grillado {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .img {
+    width: 100%;
+  }
+  .caja, .Barra, .Menu, body, header {
+    width: 100%;
+  }
+  .Pie > img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

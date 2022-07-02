@@ -1,0 +1,418 @@
+.Barra{
+    background-color: rgb(255, 255, 255);
+    width:1600px;
+    height:140px;
+    padding:10px;
+    display:inline-block;
+
+    main{
+    color:yellow;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    padding:10px;
+    text-align: center;
+    align-content: space-between;
+    margin:10px;
+    padding:20px;
+}
+
+    nav{
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 20px;
+    padding:10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+}
+
+a{
+    color:rgb(203, 160, 18);
+    justify-items: left;
+    margin:10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+}
+
+
+.caja{
+    background-color: rgb(102, 102, 102);
+    width: 1600px;
+    height:150px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    position:relative;
+    display:block;
+    justify-content: flex-start;
+    align-content: space-between;
+
+    .Buscador{
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 25px;
+        padding: 0px;
+        justify-content: flex-start;
+        align-content: space-between;
+
+        .lupa{
+            align-items: flex-start;
+            color:white;
+        }
+        .carrito{
+            width:40px;
+        }
+ 
+    }
+}
+
+
+body{
+    width:1600px;
+    background-color:#232526;
+}
+
+header{
+    background-image: url(../imagenes/foodtruck2.jpg);
+    width:1600px;
+    height:625px;
+    flex-wrap: wrap;
+    position:static;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .Banner{
+        color:rgb(255, 255, 255);
+        font-size: 50px;
+        margin:10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
+    }
+
+    .contenedor{
+        color:rgb(255, 255, 255);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 60px;
+        margin:0px;
+        flex-direction: row;
+        position:relative;
+        text-align: justify;
+    }
+}
+
+h1{
+    color:rgb(178, 16, 48);
+    font-size:  45px;
+    margin: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    color:rgb(213, 144, 4);
+    font-size: 30px;
+    margin-top: 60px;
+    margin: 15px;
+    padding: 40px;
+    font-family: sans-serif;
+}
+
+h3{
+    color:rgb(203, 30, 30);
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: top;
+    margin: 50px;
+}
+
+h4{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h5{
+    color:rgb(203, 30, 30);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10px;
+    bottom: 20px;
+}
+
+img{
+    margin:10px;
+    margin-top: 20px;
+}
+
+input{
+    color:rgb(52, 47, 47);
+    background-color:#FFFFFF;
+    font-size: 15px;
+    margin:4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.video{
+    display:inline-block;
+    margin:15px;
+}
+
+nav{
+
+.Box{
+    background-color: rgb(106, 106, 104);
+    width:355px;
+    height:240px;
+    margin:20px;
+    border-radius: 5%;
+}
+
+.Box2{
+    background-color: rgb(106, 106, 104);
+    width:355px;
+    height:280px;
+    margin:20px;
+    border-radius: 5%;
+}
+
+}
+
+
+
+.cont{
+   background-color: black;
+   display:block;
+   overflow-x: hidden;
+   width:260px;
+   height:270px;
+   margin:30px;
+   padding:0px;
+   border-radius: 5%;
+}
+
+
+.contain{
+   background-color: rgb(255, 255, 255);
+   width: 255px;
+   height:255px;
+   border-radius: 50%;
+   margin:25px;
+   padding:10px;
+   margin-top: 5%;
+   position:relative;
+}
+
+.bottom{
+    color:rgb(255, 255, 255);
+    align-content: space-between;
+}
+
+.Box{
+    background-color: rgb(106, 106, 104);
+    width:355px;
+    height:240px;
+    margin:20px;
+    border-radius: 5%;
+
+    .btn{
+        color:rgb(255, 255, 255);
+        margin:10px;
+        display:flexbox;
+        margin-top: 10px;
+        align-content: space-between;
+    }
+}
+
+p{
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:10px;
+}
+
+.contain2{
+    background-color:rgb(98, 94, 94);
+    width:260px;
+    height: 380px;
+    padding:10px;
+    margin:60px;
+    border-radius: 5%;
+    align-items: flex-start;
+    display:-webkit-inline-box;
+}
+
+article{
+    background-color: #353535;
+    display: block;
+    overflow-x: hidden;
+    width:540px;
+    height:300px;
+    margin:30px;
+    border-radius: 5%;
+}
+
+.grillado{
+    display: grid; 
+    gap: 0.2rem; 
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+    grid-template-rows: auto; 
+    grid-auto-flow: dense; 
+
+    .vertical{
+        height:50vh;
+        align-content: space-between;
+        grid-row: span 1;
+        grid-column: span 1 ; 
+    }
+
+.btn{
+    color:rgb(255, 255, 255);
+    margin:10px;
+    display:flexbox;
+    margin-top: 10px;
+    align-content: space-between;
+}
+
+}
+
+.grillado> div > img{
+    margin:15px;
+    width: 80%; 
+    height: 60%; 
+    object-fit: cover; 
+}
+
+.vertical{
+    height:50vh;
+    align-content: space-between;
+    grid-row: span 1;
+    grid-column: span 1 ; 
+  }
+  
+  .grande {
+    height:80vh;
+    grid-column: span 2; 
+    grid-row: span 2; 
+  }
+  
+  .horizontal{
+    height:60vh;
+    grid-column: span 2;
+ }
+  
+
+section{
+    color:rgb(240, 228, 8);
+    margin-left:0px;
+    margin-top:20px;
+    padding:100px;
+}
+
+hr{
+    color:rgb(255, 255, 255);
+    margin:30px;
+}
+
+.checkbox{
+    background-color: whitesmoke;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    width:380px;
+    height:420px;
+    margin:50px;
+    border-radius: 5%;
+
+form{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:15px;
+
+    legend{
+        font-size: 16px;
+        font-family: sans-serif;
+        color: rgb(238, 56, 15);
+    }
+
+    ul{
+        color:rgb(255, 255, 255);
+        font-size: 15px;
+        margin:20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
+
+.boton{
+    color: #58cc02;
+    box-shadow: 0 5px 0 #58a700;
+
+    .btn:active{
+        box-shadow: none;
+        transform: translateY(5px);
+    }
+}
+
+
+li{
+    color:white;
+    margin:5px;
+}
+
+ol{
+    color:brown;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: flex-start;
+}
+
+.mapouter{
+    margin:30px;
+}
+
+footer{
+
+.Pie{
+background-image: url("../imagenes/burguer\ footer.jpg");
+width:1600px;
+height:430px;
+flex-wrap: wrap;
+position:relative;
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: 50px;
+display:flexbox;
+}
+
+.widget{
+    color:rgb(231, 5, 5);
+    font-size: 25px;
+    align-items: center;
+}
+
+.center-footer{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+}
+
+
+@media screen and (max-width: 320px){
+    .grillado{
+      grid-template-columns: 1fr; }
+  }
+  
+@media all and (max-width:1400px){
+    .img{
+        width:100%
+   }
+   .caja,.Barra,.Menu,body,header{
+       width:100%
+    }
+   .Pie> img{
+       width:100%
+   }
+}

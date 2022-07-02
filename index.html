@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- ----------------------------------------------------------------------- -->
+<!--                            meta description                             -->
+<!-- ----------------------------------------------------------------------- -->
+
+  <!--Meta view ports-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable= no, maximum-scale= 1.0 minimum-scale= 1.0">
+  <meta name="description" content="Compra aquí tus comidas favoritas ahora a delivery, desde nuestra tienda virtual.
+  Puedes encontrar Hamburguesas caseras y comidas preparadas de la mejor calidad.">
+  <meta name="keywords" content="Bazar, Hipster, Comida, Foodtruck">
+ <!--Style Sheets--> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="./css/estilos sass/_import-sass.scss">
+  <link href="./css/sass node/main.css.map">
+  <link href="./css/sass node/main.css">
+  <link  rel="shorcut icon" href="./src/multimedia/hamburger.ico">
+  <!--Scripts-->
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link href="./css/estilos sass/_import-sass.scss">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title> El Bazar del Hipster </title>
+</head>
+
+  <body>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             Barra Buscador                              -->
+    <!-- ----------------------------------------------------------------------- -->
+
+<!--Esto es un buscador-->
+
+<div class="caja">
+<div class="Buscador" data-aos="fade-right"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine">
+
+
+    <div class="lupa">
+    <img src="./src/multimedia/loupe.png" alt="buscador" width="30px" margin-top="15px" >
+  <label for="Buscar"> Buscador: </label>
+  <input type="Search" name="buscar" id="buscar">
+  <a href="./src/paginas/busqueda.html"><input type="submit" name="Enviar" id="Enviar"></a>
+
+  <!--Carrito de compras-->
+
+  <a href="../src/paginas/carrito.html"><img class="carrito" id="carrito" src="./src/multimedia/carrito de compra.png" alt="carro" width="40px"></a> <label for="compra"> Carrito</label> 
+ 
+</div>
+     </div>
+
+<!--Contenedor Banner-->
+<header> 
+  <div class=" contenedor"> Comida Foodtruck </div>
+  <div class=" Banner"> Pide aquí </div>
+</header>
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                  Menu                                   -->
+<!-- ----------------------------------------------------------------------- -->
+
+  <!--Barra contenedora Menú-->
+  <div class="Barra">
+
+
+   <!--Menú Navegación-->
+  
+   <main>
+    <div class="Menu">
+     <nav>
+       <div class="bottom">
+         <a href= "./index.html"> Inicio </a>
+         <a href="./src/paginas/mercado.html"> Mercado </a>
+         <a href="./src/paginas/nosotros.html"> Nosotros </a>
+         <a href="./src/paginas/equipo.html"> Equipo </a>
+         <a href="./src/paginas/contacto.html"> Contacto </a>
+       </div>
+     </nav>
+     </div>
+   </main>
+ 
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                                logotipo                                 -->
+   <!-- ----------------------------------------------------------------------- -->
+
+<!--logotipo-->
+
+<div class="contain" data-aos="zoom-in">
+  <a href="./index.html">
+  <img src="./src/imagenes/logo bazar hipster transparent.png" width="250px">
+  </a>
+</div>
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                            inicio de usuario                            -->
+<!-- ----------------------------------------------------------------------- -->
+
+<!--Usuario y Contraseña-->
+<div class="Box">
+<div class="Usuario" width="20px">
+  <img src="./src/multimedia/usuario.png" alt="User" width="30px" color="white">
+<p>
+  <label for="Usuario"> Usuario </label>
+  
+  <input type="text" name="nombre usuario" id="nombre Usuario" placeholder=" ID Usuario" required>
+</p>
+
+<p>
+  <label for="password">Contraseña</label>
+  <input type="password" name="psw" id="password" placeholder= "********" maxlength="12" min="8">
+</p>
+
+<div class="btn">
+<p>
+  <a href="./src/paginas/miportal.html"><input type="submit" value="Enviar"></a> 
+  <input type="reset">
+</p>
+
+</div>
+   </div>
+      </div>
+
+      <!--crea tu cuenta aquí-->
+      <div class="boton">
+<p> <b> ¿Todavía no tienes una cuenta? </b> </p>
+
+  <!--Botón crear-->    
+    
+        <form>
+          <a href="./src/paginas/miportal.html">
+        <input type="button" value="Crear cuenta">
+        </a>
+        </form>
+        </div>
+
+
+
+
+    <!--Título del sitio-->
+  
+    <h1> ¡Bienvenidos al Bazar del Hipster! </h1>
+  
+
+    <!--Encabezado-->
+    <h2> ¡Tu bazar favorito desde el foodtruck a tu casa! </h2>
+
+
+
+<hr>
+
+<div class="bienvenida">
+<p> En este sitio encontrarás tus comidas favoritas para pedido a domicilio: <br>
+  cocinamos ricas hamburguesas, papas fritas, pizzas y ensaladas de productos locales.</p>
+
+<p>También elaboramos  refrescantes bebidas sanas como jugos naturales o las famosas Kombunchas.</p>
+
+<p>Comida rapida pero rica y autentica,<b> ¡Como te gusta a ti!.</b></p>
+</div>
+
+<hr>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           Menú de navegación                            -->
+<!-- ----------------------------------------------------------------------- -->
+
+ <!--Menú Comida -->
+ <h2> Menú </h2>
+
+<div class="contain2">
+ <nav>
+   <ul>
+     <li> <a href="./src/paginas/subpaginas/hamburguesas.html"> Hamburguesas </a> </li>
+     <li> <a href="./src/paginas/subpaginas/pizzas.html"> Pizzas </a> </li>
+     <li> <a href="./src/paginas/subpaginas/papasfritas.html"> Papas Fritas </a> </li>
+     <li> <a href="./src/paginas/subpaginas/ensaladas.html"> Ensaladas </a> </li>
+     <li> <a href="./src/paginas/subpaginas/bebidas.html"> Bebidas Jugos </a> </li>
+     <li> <a href="./src/paginas/subpaginas/kombunchas.html"> Kombunchas </a> </li>
+     <li> <a href="./src/paginas/subpaginas/cervezas.html"> Cerveza </a> </li>
+     <ul>
+       <nav>
+  </div>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                            Comercio digital                             -->
+<!-- ----------------------------------------------------------------------- -->
+
+  <!--categorias-->
+  
+          <!--Hamburguesas-->
+  
+    <hr>
+    
+    <div data-aos="fade-right"> 
+    
+      <article>
+        <h2> <b>Hamburguesas</b></h2>
+        <p><b>Variedades hamburguesas tamaños</b></p>
+        <p>Disfruta nuestra variedades y  preparaciones:</p>
+        <p> Tenemos una gran variedad de productos locales para hacer las mejores Hamburguesas. <b>¡Como a ti te gustan!</b> </p>
+        <span>
+        <p><b> El Panzón:</b> Hamburguesa común (Pan, Carne, Palta y Tomate).</p>
+        <p><b> Hamburguesa Clasica:</b> Tipica Americana (Pan, Hamburguesa, Queso, Tomate y lechuga).</p>
+        <p><b> Hamburguesa de Salmón:</b> Un sabor del Mar (Pan, Salmon ahumado, Palta y Lechuga).</p>
+        <p><b> Hamburguesa Vegana:</b> Carne BEYOND MEAT 100% natural.</p>
+        <p><b> Hamburguesa Alemana:</b> Tradición alemana (Pan, Hamburguesa,tocino, queso y pepinillos).</p>
+        <p><b> Hamburguesa Peruana:</b> Sabor exotico peruano (Pan, Carne, Lechuga, tomate y chipotle).</p>
+      </span>
+      </article>
+  </div> 
+
+ <hr>          
+     <!--comercio-->
+     <div class="grillado">
+
+      <div class="vertical">
+        
+        <img src="./src/imagenes/Hamburguesa.jpg" alt="hamburguesa" width="300px">
+
+      <!--Descripción comida-->
+      <div data-aos="fade-down">
+
+        <p>El panzón: Disfruta de esta rica hamburguesa elaborada a base de <br> (pan,carne,palta y tomate).</p>
+
+
+<!--click pedido-->
+<form>
+  <div class="btn">
+  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir"></a> 
+  <input type="reset">
+  </form>
+</div>
+  </div>
+    </div>
+
+  <!--PRODUCTOS-->
+      <div class="vertical">
+        
+        <img src="./src/imagenes/burguer assets.jpg" width="300px">
+      
+      <!--Descripción de comida-->
+      <div data-aos="fade-down">
+      
+        <p>Hamburguesa Clasica: La hamburguesa tradicional americana</p>
+        <p>(Pan,Hamburguesa, Tomate, queso y Lechuga).</p>
+
+
+<!--click pedido-->
+<form>
+  <div class="btn">
+  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir"></a> 
+  <input type="reset">
+  </form>
+</div>
+  </div>
+     </div>
+<!--producto-->
+      <div class="vertical">
+        
+        <img src="./src/imagenes/burguer footer.jpg" width="300px">
+        
+        <!--Descripción de comida-->
+      <div data-aos="fade-down">
+       
+        <p> Hamburguesa de Salmón: Come una rica hamburguesa con ingredientes, (Pan frica, Salmón, Palta, Lechuga).</p> 
+        <p>Edición limitada de temporada.</p>    
+
+ <!--click pedido-->
+<form>
+  <div class="btn">
+  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir"></a> 
+  <input type="reset">
+  </form>
+</div>
+  </div>
+    </div>
+    <!--producto-->
+         <div class="vertical">
+          
+           <img src="./src/imagenes/Hambuguesas-veganas-de-tempeh-v.webp" width="300px">
+     
+           <!--Descripción de comida-->
+      <div data-aos="fade-down">
+        
+        <p>Hamburguesa Vegana: Ahora puedes probar esta rica hamburguesa 100% vegana </p>
+        <p>ingredientes vegetarianos ideales para mantenerte saludable.</p>   
+
+
+<!--click pedido-->
+<form>
+  <div class="btn">
+  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir"></a> 
+  <input type="reset">
+  </form>
+</div>
+  </div>
+    </div>
+    <!--producto-->
+      <div class="vertical">
+      
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/3d/f6/d8/hamburguesa-americana.jpg" width="300px">
+    
+        <!--Descripción de comida-->
+      <div data-aos="fade-down">
+        
+        <p>Hamburguesa Alemana: El sabor Aleman en una sola hamburguesa (Pan frica, hamburguesa, tocino, queso, pepinillos).</p>
+    <P>Directo de la cocina a tu mesa.</P>
+
+  
+    <!--click pedido-->
+<form>
+  <div class="btn">
+ <a href="./src/paginas/carrito.html"><input type="button" value="Pedir"></a>
+  <input type="reset">
+  </form>
+</div>
+  </div>
+     </div>  
+        </div>
+
+<section>
+</section>
+
+<hr>
+<!--SANDWICH-->
+
+
+<div data-aos="fade-right">
+
+
+
+<article>
+<h2>Sandwich</h2>
+
+<p>Prueba una nueva selección de Sandwich locales</p>
+<p>Sandwich Aliado: (Pan, Jamón y Queso)</p>
+<p>Sandwich Pollo: (Pan, Pollo apanado, queso mozzarela, tocino, lechuga y tomate). </p></li>
+<p>Sandwich Ave Palta: (Pan, Ave Pollo, Palta).</p>
+<p>Sandwich Pollo Krispy (Pan, pollo krispy, lechuga, tomate, mostaza).</p>
+</article>
+</div>
+
+<hr>
+
+     <div class="grillado">
+<!--Producto-->
+      <div class="vertical"><img src="./src/imagenes/burguer delivery.jpg" width="400px">
+      <!--descripción de Producto-->
+      <p> El Sanguchon: Te presentamos nuestro emblematico Sandwich
+        Disfruta de este clasico especial de nuestra selección.<br> </p>
+
+  <!--click pedido-->
+<form>
+  <div class="btn">
+  <input type="button" value="Pedir">
+  <a href="./src/paginas/carrito.html">
+  <input type="reset">
+  </a>
+  </form>
+</div>
+  </div>
+
+  <!--Producto-->
+      <div class="vertical"><img src="https://www.hola.com/imagenes/cocina/recetas/20210208183946/sandwich-jamon-queso/1-72-559/sandwich-havar-adob-m.jpg" width="400px">
+     <!--descripción de producto-->
+    <p>Sandwich aliado: El clasico sandwich Jamón queso vuelve en nuestro portal online.</p>
+  
+    <!--click pedido-->
+  <form>
+     <div class="btn">
+    <input type="button" value="Pedir">
+    <a href="./src/paginas/carrito.html">
+    <input type="reset">
+    </a>
+    </form>
+  </div>
+    </div> 
+
+  <!--Producto-->
+      <div class="vertical"><img src="https://www.enoturismochile.cl/wp-content/uploads/2021/11/ave-palta-web.jpg" width="300px">
+<!--descripción de producto-->
+     <p>Sandwich Ave palta: Otro clasico duo sandwich de ave pollo y palta.</p>
+
+     <!--click pedido-->
+ <form>
+  <div class="btn">
+  <input type="button" value="Pedir">
+  <a href="./src/paginas/carrito.html">
+  <input type="reset">
+  </a>
+  </form>
+</div>
+  </div>
+   <!--producto-->
+      <div class="vertical"><img src="https://i.pinimg.com/474x/4a/34/25/4a3425d4eba5e83ebbf8b65b149e596f.jpg" width="300px">
+      <!--descripción de producto-->
+     <p> Sandwich pollo salsa: El sandwich pollo salsa especial, es una selección
+      (Pollo apanado, salsa teriyaki lechuga y tomate).</p>
+  
+      <!--click pedido-->
+  <form>
+    <div class="btn">
+    <input type="button" value="Pedir">
+    <a href="./src/paginas/carrito.html">
+    <input type="reset">
+    </a>
+    </form>
+  </div>
+    </div>
+<!--producto-->
+      <div class="vertical"><img src="https://i0.wp.com/revistamariaorsini.com/wp-content/uploads/2018/01/sandwichpesto-1.jpg?fit=750%2C1057&ssl=1">
+      <!--descripción producto-->
+      <p>Tapaditos frescos: los tapaditos son bocadillos de ingredientes gourmet.</p>
+      
+
+      <!--click pedido-->
+      <form>
+        <div class="btn">
+        <input type="button" value="Pedir">
+        <a href="./src/paginas/carrito.html">
+        <input type="reset">
+        </a>
+        </form>
+      </div>
+        </div>
+    </div>
+ 
+ <section>
+ </section>   
+  
+<hr>
+
+<div data-aos="fade-right">
+<article>
+<h2> Especiales </h2>
+   <p> Los favoritos de siempre también estan aquí:</p>
+   <p> Sabores únicos internacionales y cocina de autor</p>
+   <p> Hamburguesas edición Limitada, (El franchute con exquisito queso azul)</p> 
+   <p> La reconocida hamburguesa Grill Americana y tocino ahumado).</p>
+   <p> Hamburguesa Mini queso Cheddar y Salsa Barbeque.</p>
+</article>
+</div>
+
+<hr>
+        <!--Catalogo-->
+        <div class="grillado">
+          <!--producto-->
+        <div class="vertical"><img src="./src/imagenes/Hamburguesa-Queso-Azul-9.jpg" width="400px">
+     
+          <!--descripción de producto-->
+   <p>Hamburguesa Queso Azul: Te presentamos una exotica hamburguesa Francesa, 
+   con un rico queso azul especial.</p>
+
+        <!--click pedido-->
+      <form>
+        <div class="btn">
+        <input type="button" value="Pedir">
+        <a href="./src/paginas/carrito.html">
+        <input type="reset">
+        </a>
+        </form>
+      </div> 
+        </div>
+
+         <!--producto-->
+        <div class="vertical"><img src="https://tofuu.getjusto.com/orioneat-prod/tdgp3NqhnMsPymZuK-eggsorcit%20buger.jpg" alt="special burguer" width="400px">
+          <!--descripción de producto-->
+          <p>Hamburguesa Americana: La hamburguesa americana tiene lo mejor de 2 mundos (carne, huevo frito, pepinillos etc.)</p>
+
+        <!--click pedido-->
+        <form>
+          <div class="btn">
+          <input type="button" value="Pedir">
+          <a href="./src/paginas/carrito.html">
+          <input type="reset">
+          </a>
+          </form>
+        </div>
+          </div>
+      <!--producto-->
+        <div class="vertical"><img src="https://i0.wp.com/foodandpleasure.com/wp-content/uploads/2020/11/image00004-1.jpeg?resize=768%2C1024&ssl=1" alt="great burguer">
+        <!--descripción de producto-->
+        <p>Mini hamburguesa con Queso: El sabor de siempre pero ahora en pequeña escala
+        (Hamburguesa, pan y queso cheedar).</p>
+
+        <!--click pedido-->
+        <form>
+          <div class="btn">
+          <input type="button" value="Pedir">
+          <a href="./src/paginas/carrito.html">
+          <input type="reset">
+          </a>
+          </form>
+        </div>
+          </div>
+
+        <!--producto-->
+        <div class="vertical"><img src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2018/04/25/15246544766356.jpg" alt="hamburguesa especial">
+        <!--descripción producto-->
+        <p>Hamburguesa extra grande: prueba nuestra hamburguesa XL</p>
+        <p>(doble carne, queso cheddar).</p>
+
+        <!--click pedido-->
+        <form>
+          <div class="btn">
+          <input type="button" value="Pedir">
+          <a href="./src/paginas/carrito.html">
+          <input type="reset">
+          </a>
+          </form>
+        </div>
+          </div>
+      <!--producto-->
+        <div class="vertical"><img src="https://bakeitwithlove.com/wp-content/uploads/2021/03/Wagyu-Burger-lg.jpg" alt="Hamburguesa Wagyu">
+        <!--descripción de producto-->
+        <p>Hamburguesa Bacon: Si queres probar algo distinto... tenemos la Bacon extra una hamburguesa (Bacon, Queso, lechuga y tomate).</p>
+          
+        <!--click pedido-->
+        <form>
+          <div class="btn">
+          <input type="button" value="Pedir">
+          <a href="./src/paginas/carrito.html">
+          <input type="reset">
+          </a>
+          </form>
+        </div>
+          </div>
+            </div>    
+
+
+  <section>
+  </section>
+
+  <hr>
+
+<div data-aos="fade-right">
+       <article>
+        <h2> Pizzas </h2>                                                              
+        <p> Arma tu Pizzas en tamaño familiar o Medianas tu eliges los acompañamientos: </p>
+        <p> <b> Escoge la que más te gusta : </b> </p>
+        <p>Tenemos una gran variedad de Pizzas a elección...</p>
+        <p>Pizzas Vegetarianas: (Pizza tres estaciones, Pizza Napolitana y Pizza a la piedra) </p>
+        <p>Pizzas Carnes: Pizza tradicional (peperoni, queso,tomate y rucula)</p>
+        <p>Pizza Española (Jamón, Queso, Tomate, Chorizo).</p> <p>Pizza Hawaiana: el clasico sabor Hawaiano (Jamón, Piña, Queso) </p>
+      </article>
+</div>
+  
+
+    <!--Pizzas-->
+    
+        <!--Catalogo-->
+        <div class="grillado">
+          
+          <!--Producto-->
+          <div class="vertical"><img src="./src/imagenes/pizza piedra.jpg" width="400px">
+          
+            <!--Descripción Producto-->
+            <div data-aos="fade-down">
+           <p>  Pizza Vegetariana: (Masa, Salsa de Tomate, Rucula y Queso)</p>
+        <p> En los últimos años la Pizza Vegetariana ha ganado bastante popularidad por su simpleza.</p>
+       
+            <!--click pedido-->
+        <form>
+          <div class="btn">
+          <input type="button" value="Pedir">
+          <a href="./src/paginas/carrito.html">
+          <input type="reset">
+          </a>
+          </form>
+        </div>
+          </div> 
+            </div>
+
+<!--Producto-->
+
+      <div class="vertical"><img src="./src/imagenes/pizza vegetariana.jpg" alt="Pizza piedra" width="400px">
+  
+        <!--Descripción del Producto-->
+    <div data-aos="fade-down">
+      <p>Pizza a la Piedra: Prueba esta tradicional masa, <br> hecha de forma casera con ingredientes frescos (tomate, Jamón, Queso, Aceitunas).</p> 
+         
+       <!--click pedido-->
+        <form>
+          <div class="btn">
+          <input type="button" value="Pedir">
+          <a href="./src/paginas/carrito.html">
+          <input type="reset">
+          </a>
+          </form>
+        </div>
+          </div>
+            </div>  
+
+      <!--Producto-->
+          <div class="vertical"><img src="./src/imagenes/pizza-hawaiana(1).jpg" alt="pizza-hawaiana" width="450px">
+          
+            <!--Descripción del producto-->  
+          <div data-aos="fade-down">
+
+            <p> Pizza Hawaiana: (Masa, Pizza, Queso, Jamón) </p>
+              <p> Un clasico de la comida Hawaiana, esta pizza es reconocida <br> por su sabor exotico agridulce.</p>
+           
+            <!--click pedido-->
+            <form>
+              <div class="btn">
+              <input type="button" value="Pedir">
+              <a href="./src/paginas/carrito.html"></a>
+              <input type="reset">
+              </form>
+            </div>
+              </div> 
+                </div>
+
+        <!--Producto-->
+          <div class="vertical">
+            <img src="https://w6h5a5r4.rocketcdn.me/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg" alt="pizza-peperoni">
+          
+          <!--Descripción del producto-->
+           <div data-aos="fade-down">
+ 
+           <p>Pizza a la Española: La reconocida Pizza a la Española vuelve al Bazar con la mejor calidad.</p>
+           <p>Ingredientes (masa, tomate, Jamón, Queso, Chorizo).</p>
+         
+           <!--click pedido-->
+         <form>
+          <div class="btn">
+          <input type="button" value="Pedir">
+          <a href="./src/paginas/carrito.html">
+          <input type="reset">
+          </a>
+          </form>
+        </div>
+          </div>
+            </div>
+               </div>
+
+<section>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                       Formularios de Inscripción                        -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+   <!--Formularios-->
+
+   <h3> Inscribete a nuestro delivery:</h3>
+
+   <!--Checkbox-->
+
+<div class="container-mt5"></div>
+   <div class="checkbox" data-aos="fade-right"
+   data-aos-offset="300"
+   data-aos-easing="ease-in-sine">
+   <form>
+   <fieldset>
+      <legend> Mi Nombre</legend>
+      <input type="text" name="nombre"placeholder="escribe tu nombre">
+    </fieldset>
+    </form>
+
+
+    <form>
+    <fieldset>
+        <legend> Datos de contacto</legend>
+        <input type="text" placeholder="número de telefóno">
+    </fieldset>
+    </form>
+
+      <form>
+        <fieldset>
+          <legend> Mi dirección</legend>
+          <input type="text" placeholder="escribe tu dirección">
+        </fieldset>
+      </form>
+        
+
+        <form>
+        <fieldset>
+            <legend> Mi País </legend>
+            <input type="text" placeholder="mi país">
+        </fieldset>
+      </form>
+          
+
+          <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+          </p>
+        </div>
+          
+  <form action="" method="get" enctype="text/plain">
+  
+  </form>
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Menú Box                                 -->
+<!-- ----------------------------------------------------------------------- -->
+
+  <!--deliver-->
+
+<h2> Arma tu Menú </h2>
+<p class= "card__description"> ¡Tenemos Combos para tus amigos!</p>
+</div>
+
+<hr>
+
+
+<div class="grillado">
+<div class=""><img src="./src/imagenes/burguer food.jpg" alt="delivery-burguer" width="250px">
+<p>Combo doble: Una opción especial para compartir de a 2 personas, (hambuguesa doble,papas fritas, bebidas).</p>
+</div> 
+
+<div class=""><img src="https://www.burgerbox.co.uk/images/gal/bb7.jpg" alt="burguer pack" width="250px">
+<p>Burguer box grande: Un rico acompañamiento para pedir cuando tengas hambre después de una fiesta o con tus amigos.</p>
+</div>
+<div class=""><img src="https://eldiariony.com/wp-content/uploads/sites/2/2022/03/come-nuggets-papas-fritas-22-anos-shutterstock_1678649386.jpg?quality=60&strip=all&w=1200" alt="papas y nuggets" width="250px">
+<p>Acompañamientos papas fritas y nuggets (papas pequeñas, medianas y grandes).</p>
+</div> 
+<div class=""><img src="https://res.cloudinary.com/glovoapp/h_225,f_auto,q_auto/Stores/qdlhgnnfjg6splhvohzy" alt="burguerbox" width="250px">
+<p>Hamburguesa Triple queso: para los hambrientos tenemos esta increible oferta con acompañamiento a elección (papas fritas medianas o aros de cebolla).</p>
+</div> 
+<div class=""><img src="https://www.canalviax.com/wp-content/uploads/2017/11/eJvI7kg.jpg" alt="hamburguesa duplex" width="250px" >
+<p>Promo duo triple carne: Esta hamburguesa es la preferida por muchos, al momento de compartir con la pareja o amigos. (hamburguesa Carne,Bacon, Lechuga y tomate).</p>
+</div>
+  </div>
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                             Footer website                              -->
+<!-- ----------------------------------------------------------------------- -->
+
+<!--El botón esta en este bloque-->
+<div class="call"> Siguenos en nuestras Redes Sociales ;) </div>
+
+<!--Pie de Pagina-->
+
+<footer>
+ 
+  <div class= "Pie">
+
+      <div class="Widget">
+        <h5> ¡Gracias por visitarnos!</h5>
+        </div>
+    
+        <div class="center-footer" id="call-action">
+        <h4> Siguenos en nuestras redes sociales.</h4>
+               <h4> Todos los derechos reservados (R) </h4>
+    <ul>
+      <li> <a class="btn" href="https://www.facebook.com/"> facebook </a> </li>
+      <li> <a class="btn" href="https://www.instagram.com/"> Instagram </a> </li>
+      <li> <a class="btn" href="https://twitter.com/"> twitter </a> </li>
+    </ul>
+    <div class="powr-paypal-button" id="507c94aa_1654184811"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+
+         </div>
+        </div>
+       </div>
+</footer>
+
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
