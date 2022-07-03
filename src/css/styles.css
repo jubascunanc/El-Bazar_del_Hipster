@@ -269,7 +269,7 @@ article {
   background-color: #353535;
   display: block;
   overflow-x: hidden;
-  width: 540px;
+  width: 450px;
   height: 300px;
   margin: 30px;
   border-radius: 5%;
@@ -404,7 +404,7 @@ ol {
 
 footer .Pie {
   background-image: url("../imagenes/burguer footer.jpg");
-  width: 1600px;
+  width: 100vwpx;
   height: 430px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -439,7 +439,7 @@ footer .center-footer {
   .img {
     width: 100%;
   }
-  .caja, .Barra, .Menu, body, header {
+  .caja, .Barra, .Menu, body, header, .Pie {
     width: 100%;
   }
   .Pie > img {
