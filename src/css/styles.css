@@ -83,13 +83,12 @@ a {
 }
 
 body {
-  width: 1600px;
   background-color: #232526;
 }
 
 header {
   background-image: url(../imagenes/foodtruck2.jpg);
-  width: 1600px;
+  width: 100 vw;
   height: 625px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -128,6 +127,7 @@ header .contenedor {
 h1 {
   color: #b21030;
   font-size: 45px;
+  text-align: center;
   margin: 50px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -135,22 +135,24 @@ h1 {
 h2 {
   color: #d59004;
   font-size: 30px;
+  text-align: center;
   margin-top: 60px;
   margin: 15px;
-  padding: 40px;
-  font-family: sans-serif;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h3 {
-  color: #cb1e1e;
-  font-size: 25px;
+  color: #cb2a1e;
+  font-size: 35px;
+  text-shadow: #342f2f;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: top;
-  margin: 50px;
+  margin: 55px;
 }
 
 h4 {
-  color: white;
+  color: rgb(37, 36, 36);
   font-size: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
@@ -228,11 +230,12 @@ nav .Box2 {
       align-content: space-between;
 }
 
+
 .Box {
   background-color: #6a6a68;
   width: 355px;
   height: 240px;
-  margin: 20px;
+  margin: 98px;
   border-radius: 5%;
 }
 
@@ -243,6 +246,16 @@ nav .Box2 {
   margin-top: 10px;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+}
+
+.Box2{
+  display: block;
+  background-color: #666666;
+  margin:60px;
+  width:300px;
+  height:320px;
+  border-radius: 5%;
+  align-content: space-between;
 }
 
 p {
@@ -269,11 +282,22 @@ article {
   background-color: #353535;
   display: block;
   overflow-x: hidden;
-  align-content: center;
-  width: 450px;
+  width: 400px;
   height: 300px;
-  margin: 30px;
+  margin: 60px;
   border-radius: 5%;
+}
+
+.inicio{
+  margin:40px;
+}
+
+.click{
+  margin:40px;
+}
+
+.subtitulo{
+  text-align: center;
 }
 
 .grillado {
@@ -344,6 +368,9 @@ hr {
   border-style: dashed;
 }
 
+b{
+  margin:40px;
+}
 .checkbox {
   background-color: whitesmoke;
   /* fallback for old browsers */
@@ -404,15 +431,15 @@ ol {
 }
 
 footer .Pie {
-  background-image: url("../imagenes/burguer footer.jpg");
-  width: 100vwpx;
-  height: 430px;
+  background-image: url("../imagenes/burguer-img-footer.jpg");
+  width: 100 vw;
+  height: 450px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 50px;
+  margin-top: 80px;
   display: flexbox;
 }
 
@@ -429,6 +456,8 @@ footer .center-footer {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+
 @media screen and (max-width: 320px) {
   .grillado {
     -ms-grid-columns: 1fr;
@@ -440,9 +469,14 @@ footer .center-footer {
   .img {
     width: 100%;
   }
-  .caja, .Barra, .Menu, body, header, .Pie {
+  .caja, .Barra, .Menu, body, header, .Pie{
     width: 100%;
   }
+
+  article{
+    width:100%;
+  }
+
   .Pie > img {
     width: 100%;
   }
