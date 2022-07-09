@@ -269,7 +269,7 @@ article {
   background-color: #353535;
   display: block;
   overflow-x: hidden;
-  justify-self: center;
+  align-content: center;
   width: 450px;
   height: 300px;
   margin: 30px;
