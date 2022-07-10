@@ -431,8 +431,8 @@ ol {
 }
 
 footer .Pie {
-  background-image: url("../imagenes/banner-Hamburguesa.jpg");
-  width: 1400px;
+  background-image: url("../imagenes/web-burguer-footer.jpg");
+  width: 100vw;
   height: 450px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
