@@ -152,15 +152,16 @@ h3 {
 }
 
 h4 {
-  color: rgb(37, 36, 36);
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: center;
+  text-align:center;
   text-transform: capitalize;
 }
 
 h5 {
-  color: #cb1e1e;
+  color:#cb1e1e;
+  background-color: #252525;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
   font-size: 28px;
@@ -236,6 +237,7 @@ nav .Box2 {
   width: 355px;
   height: 240px;
   margin: 98px;
+  margin-top:55px;
   border-radius: 5%;
 }
 
@@ -282,9 +284,9 @@ article {
   background-color: #353535;
   display: block;
   overflow-x: hidden;
-  width: 400px;
+  width: 430px;
   height: 300px;
-  margin: 60px;
+  margin: 40px;
   border-radius: 5%;
 }
 
@@ -368,9 +370,7 @@ hr {
   border-style: dashed;
 }
 
-b{
-  margin:40px;
-}
+
 .checkbox {
   background-color: whitesmoke;
   /* fallback for old browsers */
@@ -431,8 +431,8 @@ ol {
 }
 
 footer .Pie {
-  background-image: url("../imagenes/burguer-img-footer.jpg");
-  width: 100 vw;
+  background-image: url("../imagenes/banner-Hamburguesa.jpg");
+  width: 1400px;
   height: 450px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
