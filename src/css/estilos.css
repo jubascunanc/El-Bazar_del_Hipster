@@ -281,6 +281,7 @@ article{
     background-color: #353535;
     display: block;
     overflow-x: hidden;
+    text-align: center;
     width:540px;
     height:300px;
     margin:30px;

@@ -27,7 +27,7 @@ let textoNumero = nombre + edad; //Pepe56 es un String
 
 //consola
 console.log ("Bienvenidos a la consola");
-console.log("mi comida favorita es:" +hamburguesa);
+console.log ("mi comida favorita es: Hamburguesa");
 
 //promt
 
