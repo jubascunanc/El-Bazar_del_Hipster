@@ -47,7 +47,6 @@ a {
   background-color: #666666;
   width: 1600px;
   height: 150px;
-  margin-bottom: 50px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
@@ -88,7 +87,7 @@ body {
 
 header {
   background-image: url(../imagenes/foodtruck2.jpg);
-  width: 100 vw;
+  width: 1600px;
   height: 625px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -286,7 +285,7 @@ article {
   overflow-x: hidden;
   width: 430px;
   height: 300px;
-  margin: 40px;
+  margin: 25px;
   border-radius: 5%;
 }
 
@@ -439,7 +438,7 @@ footer .Pie {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 80px;
+  margin-top: 60px;
   display: flexbox;
 }
 
@@ -465,7 +464,7 @@ footer .center-footer {
   }
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1600px) {
   .img {
     width: 100%;
   }
