@@ -1,7 +1,7 @@
 //declaracion de variables
-let equipoFavorito;
+let PizzaFavorita;
 //inicializacion de la variable
-equipoFavorito="Ajax";
+PizzaFavorita="Italiana";
 //declaracion e inicializacion de variables
 let cantidadTitulos=15;
 
@@ -21,7 +21,7 @@ let division = edad / 2; //28
 let nombre = "Pepe";
 let apellido = "Gomez";
 const ESPACIO=" ";
-let nombreCompleto = nombre + ESPACIO + apellido; //Pepe Gomez
+let nombreCompleto = (nombre + ESPACIO + apellido); //Pepe Gomez
 
 let textoNumero = nombre + edad; //Pepe56 es un String
 
@@ -31,8 +31,46 @@ console.log ("mi comida favorita es: Hamburguesa");
 
 //promt
 
-let usuario= promt("Ingresa tu Usuario")
+let usuario= prompt("Ingresa tu Usuario")
 console.log("usuario ingresado:"+usuario);
 
 //alert
 alert("usuario ingresado:"+usuario);
+
+//declaración
+console.log ("Elige el Menú");
+console.log("Elijo: el Menú Familiar");
+
+let unNumero= 18
+
+if ("edad mayor +18 años"){
+    console.log("eres mayor de edad puedes entrar");
+}
+
+if("edad menor -18 años"){
+    console.log("eres menor de edad NO puedes entrar");
+}
+
+let Alcohol=prompt("Ingresa que Alcohol deseas comprar");
+
+if (Alcohol== "Cerveza"){
+    alert ("haz seleccionado la opción: Cerveza");
+}
+
+else if (Alcohol== "Vino"){
+    alert ("haz seleccionado la opción Vino");
+}
+
+const AnioActual=2022;
+
+let AnioUsuario=parseInt(prompt("Ingresa tu año de nacimiento"));
+let Edad=AnioActual-AnioUsuario;
+if (Edad>=18)
+if ("es Mayor de Edad"){
+console.log ("puedes ingresar al sitio");
+}else  {
+    console.log ("No puedes ingresar al sitio");
+}
+
+let nombreIngresado =prompt("ingresar nombre");
+
