@@ -1,35 +1,17 @@
-//declaracion de variables
-let PizzaFavorita;
-//inicializacion de la variable
-PizzaFavorita="Italiana";
-//declaracion e inicializacion de variables
-let cantidadTitulos=15;
-
-//declaracion e inicializacion de constantes
-const PI=3.1416;
-
-//Operaciones matematicas
-let edad=56;
-let edad2=23;
-
-let sumaEdades = edad + edad2; //79
-let restaEdades = edad - edad2; //33
-let multiplicacion = edad2 * 2; //46
-let division = edad / 2; //28
-
+/*consola codigo js*/
+console.log ("Bienvenido a la compra rápida");
 //Concatenacion
-let nombre = "Pepe";
-let apellido = "Gomez";
+let nombre = prompt ("Dame tu nombre:");
+let apellido = prompt("Dame tu apellido");
 const ESPACIO=" ";
-let nombreCompleto = (nombre + ESPACIO + apellido); //Pepe Gomez
+let nombreCompleto = (nombre + ESPACIO + apellido);
+console.log ("Nombre completo:" +nombre +ESPACIO +apellido);
 
-let textoNumero = nombre + edad; //Pepe56 es un String
-
-//consola
+//Bienvenidos a la consola
 console.log ("Bienvenidos a la consola");
 console.log ("mi comida favorita es: Hamburguesa");
 
-//promt
+//Ingresa tu usuario//
 
 let usuario= prompt("Ingresa tu Usuario")
 console.log("usuario ingresado:"+usuario);
@@ -37,40 +19,157 @@ console.log("usuario ingresado:"+usuario);
 //alert
 alert("usuario ingresado:"+usuario);
 
-//declaración
-console.log ("Elige el Menú");
-console.log("Elijo: el Menú Familiar");
+//Ingresa tu contraseña//
+let password;
+for (let i=1; i<=3;i++){
+password=prompt("ingresa tu contraseña");
 
-let unNumero= 18
+if (password= "12345"){
+    alert("contraseña correcta");
+    console.log("Bienvenido Usuario");
 
-if ("edad mayor +18 años"){
-    console.log("eres mayor de edad puedes entrar");
+}else{
+    password!="12345";
+    console.log("clave erronea, restan 3" + (3-i) + "intentos");
+}
 }
 
-if("edad menor -18 años"){
-    console.log("eres menor de edad NO puedes entrar");
-}
-
-let Alcohol=prompt("Ingresa que Alcohol deseas comprar");
-
-if (Alcohol== "Cerveza"){
-    alert ("haz seleccionado la opción: Cerveza");
-}
-
-else if (Alcohol== "Vino"){
-    alert ("haz seleccionado la opción Vino");
-}
-
+//Verificación de edad legal//
 const AnioActual=2022;
-
 let AnioUsuario=parseInt(prompt("Ingresa tu año de nacimiento"));
-let Edad=AnioActual-AnioUsuario;
-if (Edad>=18)
-if ("es Mayor de Edad"){
-console.log ("puedes ingresar al sitio");
-}else  {
-    console.log ("No puedes ingresar al sitio");
+let Edad = AnioActual-AnioUsuario
+
+//Año legal para consumir alcohol//
+if (Edad>=18 ){
+    alert("Eres mayor de edad");
+    console.log("Puedes comprar Alcohol");
 }
 
-let nombreIngresado =prompt("ingresar nombre");
+if (Edad< 18){
+alert("Eres menor de edad :(");
+console.log("NO Puedes comprar Alcohol");
+}
 
+
+    let Alcohol=prompt("Ingresa que Alcohol deseas comprar");
+
+    if (Alcohol== "Cerveza"){
+        alert("haz seleccionado la opción: Cerveza");
+    }
+
+    else if (Alcohol== "Vino"){
+        alert ("haz seleccionado la opción Vino");
+    }
+
+    else if (Alcohol== "Ron"){
+        alert("haz seleccionado la opción Ron");
+    }
+
+    else if (Alcohol== "cocktail"){
+        alert("haz seleccionado")
+    }
+//carrito de compras//
+function calcular (){
+
+let articulo= prompt ("ingresa los articulos que querés agregar a tu carrito: -EXIT para salir \n Hamburguesa \n Sandwiches \n Pizzas \n Ensalada \n Alcohol - EXIT para salir");
+articulo =prompt("ingrese otro pedido");
+let precio= 0;
+let precioConIva= 1.21;
+
+while (articulo!="EXIT"){
+    switch (articulo){
+        case "Hamburguesa":
+        case "hamburguesa":
+
+    precio= precio + 5000
+    precioConIva=precio *1,21;
+    console.log("El valor de Hamburguesa es: $5.000 pesos");
+    console.log ("El articulo esta disponible para la Venta \n Hay stock");
+    break;
+
+    case "Sandwiches":
+    case "sandwiches":
+        precio= precio + 3000
+        precioConIva= precio *1,21;
+        console.log("El valor de Sandwiches es: $3.000 pesos");
+        console.log("El articulo esta disponible para la Venta \n Hay Stock");
+        break;
+
+    case "Pizzas":
+    case "pizzas":
+        precio= precio + 5000
+        precioConIva= precio *1,21;
+        console.log("El valor de Pizzas es: $5.000 pesos")
+        console.log("Este articulo se encuentra en Venta \n Hay stock");
+        break;
+
+    case "Ensalada":
+    case "ensalada":
+        console.log ("El articulo no se encuentra en Venta \n NO hay Stock");
+        break;
+
+    case "Alcohol":
+    case "alcohol":
+        precio= precio + 3.000
+        precioConIva= precio *1,21;
+        console.log("El valor de Alcohol es: $3.000 pesos")
+        console.log("El articulo se encuentra en Venta \n Hay stock");
+        break;
+
+    default:
+        console.log("Este articulo no se encuentra disponible");
+        break;
+    }
+articulo= prompt("ingresa los articulos que querés agregar a tu carrito: -EXIT para salir \n Hamburguesa \n Sandwiches \n Pizzas \n Ensalada \n Alcohol");
+}
+console.log("Total a Pagar $" +precio);
+}
+calcular()
+
+//Orden de Compra//
+let eleccionMenu= prompt("¿Quieres agregar un Menú?");
+
+let Menú=prompt("selecciona tu Menú");
+
+if (Menú=="Menú familiar"){
+alert("Haz seleccionado el: Menú Familiar");
+   console.log ("El usuario ha seleccionado el Menú Familiar");
+}
+if (Menú== "Box family"){
+alert(" Haz seleccionado el Menú: Box family");
+    console.log ("El usuario ha seleccionado la opción Box family");
+}
+if (Menú== "Doble Box"){
+alert(" Haz seleccionado el Menú: Doble Box");
+    console.log(" El usuario ha seleccionado la opción Doble Box");
+}
+
+
+let entrada = prompt("¿Ya haz comprado antes con nosotros?");
+//entra while//
+while (entrada != "Esc"){
+switch (entrada){
+    case "Si":
+        alert("que bueno verte devuelta");
+        console.log("Hola Usuario Antiguo");
+        continue
+    case "No":
+        alert("No te reconocemos...");
+        console.log ("No haz, comprado aqui antes");
+        continue
+    default:
+        alert ("¿necesitas ayuda?");
+        console.log("Contacta a soporte");
+    }
+let entrada = prompt("¿Ya haz comprado antes con nosotros?");
+}
+
+let producto = prompt("Elija su opción de compra aquí");
+
+
+let texto="";
+let palabra=prompt("Ingresa instrucciones de despacho (s-para salir de la ventana)");
+while(palabra!="s"){
+    texto = texto + "" + palabra;
+    palabra=prompt("ingresa una instrucción al despachador (s-para salir de la ventana)");
+}

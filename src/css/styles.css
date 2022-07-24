@@ -89,7 +89,7 @@ body {
 
 header {
   background-image: url(../imagenes/foodtruck2.jpg);
-  width: 1600px;
+  width: 100vw;
   height: 625px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -369,7 +369,6 @@ hr {
   margin: 30px;
   border-style: dashed;
 }
-
 
 .checkbox {
   background-color: whitesmoke;
