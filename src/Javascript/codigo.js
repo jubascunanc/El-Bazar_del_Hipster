@@ -27,7 +27,7 @@ password=prompt("ingresa tu contraseña");
 if (password= "12345"){
     alert("contraseña correcta");
     console.log("Bienvenido Usuario");
-
+break;
 }else{
     password!="12345";
     console.log("clave erronea, restan 3" + (3-i) + "intentos");
@@ -53,53 +53,55 @@ console.log("NO Puedes comprar Alcohol");
 
     let Alcohol=prompt("Ingresa que Alcohol deseas comprar");
 
-    if (Alcohol== "Cerveza"){
+    if (Alcohol= "Cerveza"){
         alert("haz seleccionado la opción: Cerveza");
     }
 
-    else if (Alcohol== "Vino"){
+    else if (Alcohol= "Vino"){
         alert ("haz seleccionado la opción Vino");
     }
 
-    else if (Alcohol== "Ron"){
+    else if (Alcohol= "Ron"){
         alert("haz seleccionado la opción Ron");
     }
 
-    else if (Alcohol== "cocktail"){
+    else if (Alcohol= "cocktail"){
         alert("haz seleccionado")
     }
-//carrito de compras//
-function calcular (){
 
-let articulo= prompt ("ingresa los articulos que querés agregar a tu carrito: -EXIT para salir \n Hamburguesa \n Sandwiches \n Pizzas \n Ensalada \n Alcohol - EXIT para salir");
+//carrito de compras//
+
+let articulo= prompt ("ingresa los articulos que querés agregar a tu carrito: -EXIT para salir \n Hamburguesa \n Sandwiches \n Pizzas \n Ensalada \n Alcohol");
 articulo =prompt("ingrese otro pedido");
 let precio= 0;
 let precioConIva= 1.21;
 
+function calcular (){
+
 while (articulo!="EXIT"){
     switch (articulo){
-        case "Hamburguesa":
-        case "hamburguesa":
+    case "Hamburguesa":
+    case "hamburguesa":
 
-    precio= precio + 5000
-    precioConIva=precio *1,21;
-    console.log("El valor de Hamburguesa es: $5.000 pesos");
+        precio= precio + 4500
+        precioConIva=precio *1,21;
+    console.log ("El valor de Hamburguesa es: $4.500 pesos");
     console.log ("El articulo esta disponible para la Venta \n Hay stock");
     break;
 
     case "Sandwiches":
     case "sandwiches":
-        precio= precio + 3000
+        precio= precio + 2500
         precioConIva= precio *1,21;
-        console.log("El valor de Sandwiches es: $3.000 pesos");
+        console.log("El valor de Sandwiches es: $2.500 pesos");
         console.log("El articulo esta disponible para la Venta \n Hay Stock");
         break;
 
     case "Pizzas":
     case "pizzas":
-        precio= precio + 5000
+        precio= precio + 7000
         precioConIva= precio *1,21;
-        console.log("El valor de Pizzas es: $5.000 pesos")
+        console.log("El valor de Pizzas es: $7.000 pesos")
         console.log("Este articulo se encuentra en Venta \n Hay stock");
         break;
 
@@ -110,9 +112,9 @@ while (articulo!="EXIT"){
 
     case "Alcohol":
     case "alcohol":
-        precio= precio + 3.000
+        precio= precio + 10000
         precioConIva= precio *1,21;
-        console.log("El valor de Alcohol es: $3.000 pesos")
+        console.log("El valor de Alcohol es: $10.000 pesos")
         console.log("El articulo se encuentra en Venta \n Hay stock");
         break;
 
