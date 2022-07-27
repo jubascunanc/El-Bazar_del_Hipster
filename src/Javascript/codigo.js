@@ -49,7 +49,7 @@ if (Edad>=18 ){
 let Alcohol=prompt("Ingresa que Alcohol deseas comprar");
 
 if (Alcohol== "Cerveza"){
-    alert("haz seleccionado la opción")
+    alert("haz seleccionado la opción Cerveza")
     console.log("El usuario ha seleccionado la opción cerveza");
 }
 
@@ -68,12 +68,12 @@ else if (Alcohol== "cocktail"){
     console.log("El usuario ha seleccionado la opción Cocktail");
 }
 
-
 //break point//
 if (Edad< 18){
-alert("Eres menor de edad :(");
-console.log("NO Puedes comprar Alcohol");
-}
+    alert("Eres menor de edad :(");
+    console.log("NO Puedes comprar Alcohol");
+    }
+    
 
 //carrito de compras//
 
@@ -143,7 +143,7 @@ alert(" Haz seleccionado el Menú: Doble Box");
 }
 
 
-let entrada = prompt("¿Ya haz comprado antes con nosotros?");
+let entrada = prompt("¿Ya haz comprado antes con nosotros? presiona -Esc para salir");
 while (entrada != "Esc"){
 switch (entrada){
     case "Si":
@@ -160,11 +160,12 @@ switch (entrada){
         break;
     }
 
-entrada = prompt("¿Ya haz comprado antes con nosotros?");
+entrada = prompt("¿Ya haz comprado antes con nosotros? presiona -Esc para salir");
+break;
 }
 
 
-let inscripcion = prompt("¿NO tienes una suscripción?");
+let inscripcion = prompt("¿NO tienes una suscripción? presiona -Esc para salir");
 //entra while//
 while (entrada != "Esc"){
 switch (entrada){
@@ -179,7 +180,7 @@ switch (entrada){
         alert("...");
 }
 }
-inscripcion = prompt("¿No tienes una suscripción?");
+inscripcion = prompt("¿NO tienes una suscripción? presiona -Esc para salir");
 
 let producto = prompt("Elija su opción de despacho aquí");
 
