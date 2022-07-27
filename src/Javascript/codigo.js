@@ -49,20 +49,23 @@ if (Edad>=18 ){
 let Alcohol=prompt("Ingresa que Alcohol deseas comprar");
 
 if (Alcohol== "Cerveza"){
-    alert("haz seleccionado la opción: Cerveza");
+    alert("haz seleccionado la opción")
     console.log("El usuario ha seleccionado la opción cerveza");
 }
 
 else if (Alcohol== "Vino"){
     alert ("haz seleccionado la opción Vino");
-}
+    console.log("El usuario ha seleccionado la opción Vino");
+}   
 
 else if (Alcohol== "Ron"){
     alert("haz seleccionado la opción Ron");
+    console.log("El usuario ha seleccionado la opción RON");
 }
 
 else if (Alcohol== "cocktail"){
     alert("haz seleccionado la opción Cocktail");
+    console.log("El usuario ha seleccionado la opción Cocktail");
 }
 
 
@@ -141,7 +144,6 @@ alert(" Haz seleccionado el Menú: Doble Box");
 
 
 let entrada = prompt("¿Ya haz comprado antes con nosotros?");
-//entra while//
 while (entrada != "Esc"){
 switch (entrada){
     case "Si":
