@@ -150,9 +150,26 @@ const objeto1= new objeto ("Hamburguesa Hipster", 4500 , "numero de serie 0302")
 const objeto2= new objeto ("Hamburguesa Americana", 5500, "numero de serie 1901");
 const objeto3= new objeto ("Hamburguesa el Panzón", 3500, "numero de serie 1234");
 
-alert("haz seleccionado: "+objeto1 + precio );
+alert("haz seleccionado: "+Micarrito + precio );
+
+const Checkout=["Hamburguesa", "Pizzas", "Papas Fritas", "Ensalada", "Sandwiches", "Cerveza", "Vino"];
+console.log (Checkout);
+
+console.log ("El resumen de tu compra es:" +Checkout[0,1,2,4]);
+//recorrido del array
+for (let i=0; i<Checkout.length;i++){
+    console.log(Checkout[i]);
+}
+
+Checkout.push("Hamburguesa Hipster");
+console.log(Checkout);
+
+//metodo unshift
+Checkout.unshift("Cerveza");
+console.log(Checkout);
 
 //selecciona un Menú
+alert("¿Quieres agregar un Menú?");
 let menu=prompt("selecciona tu Menú");
 
 if (menu=="Menú familiar"){
@@ -190,12 +207,12 @@ entrada = prompt("¿Ya haz comprado antes con nosotros? presiona -Esc para salir
 break;
 }
 
-
+//suscripción
 let inscripcion = prompt("¿NO tienes una suscripción? presiona -Esc para salir");
 //entra while//
 while (entrada != "Esc"){
 switch (entrada){
-    case "Quiero suscribirme":
+    case "Si Quiero":
         alert("¿Quieres suscribirte?");
         console.log ("suscribete para beneficios")
         break;
