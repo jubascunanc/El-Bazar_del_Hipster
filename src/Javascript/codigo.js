@@ -28,7 +28,7 @@ password=prompt("ingresa tu contraseña");
 if (password= "12345"){
     alert("contraseña correcta");
     console.log("Bienvenido Usuario");
-break;
+    break;
 }else{
     password!="123456";
     console.log("clave erronea, restan 3" + (3-i) + "intentos");
@@ -124,20 +124,46 @@ console.log("Total a Pagar $" +precioConIva);
 }
 calcular();
 
-//Orden de Compra//
-let eleccionMenu= prompt("¿Quieres agregar un Menú?");
 
-let Menú=prompt("selecciona tu Menú");
 
-if (Menú=="Menú familiar"){
+let Objetos=prompt("Ingresa tu preferencia:")
+console.log("Selecciona tu preferencia");
+
+//objeto
+
+alert("Elegiste hamburguesa Hipster");
+const Micarrito={
+    nombre: ["Hamburguesa Hipster"],
+    precio: ["4500"],
+    serie: ["0302"],
+}
+console.log(Micarrito);
+console.log("Su selección es: " +Micarrito.nombre);
+
+//objetos constructores
+function objeto (nombre, precio, serie){
+    this.nombre= nombre;
+    this.precio= precio;
+    this.serie= serie;
+}
+const objeto1= new objeto ("Hamburguesa Hipster", 4500 , "numero de serie 0302");
+const objeto2= new objeto ("Hamburguesa Americana", 5500, "numero de serie 1901");
+const objeto3= new objeto ("Hamburguesa el Panzón", 3500, "numero de serie 1234");
+
+alert("haz seleccionado: "+objeto1 + precio );
+
+//selecciona un Menú
+let menu=prompt("selecciona tu Menú");
+
+if (menu=="Menú familiar"){
 alert("Haz seleccionado el: Menú Familiar");
    console.log ("El usuario ha seleccionado el Menú Familiar");
 }
-if (Menú== "Box family"){
+if (menu== "Box family"){
 alert(" Haz seleccionado el Menú: Box family");
     console.log ("El usuario ha seleccionado la opción Box family");
 }
-if (Menú== "Doble Box"){
+if (menu== "Doble Box"){
 alert(" Haz seleccionado el Menú: Doble Box");
     console.log(" El usuario ha seleccionado la opción Doble Box");
 }
@@ -191,3 +217,4 @@ while(palabra!="s"){
     texto = texto + "" + palabra;
     palabra=prompt("ingresa una instrucción al despachador (s-para salir de la ventana)");
 }
+
