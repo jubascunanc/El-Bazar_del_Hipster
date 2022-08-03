@@ -25,7 +25,7 @@ let password;
 for (let i=1; i<=3;i++){
 password=prompt("ingresa tu contraseña");
 
-if (password= "12345"){
+if (password= "123456"){
     alert("contraseña correcta");
     console.log("Bienvenido Usuario");
     break;
@@ -81,23 +81,35 @@ let articulo= prompt ("ingresa los articulos que querés agregar a tu carrito: -
 let precio= 0;
 let precioConIva= 1.19;
 
+class Checkout {
+    constructor(nombre, precio, serie, unidades ) {
+        this.nombre  = nombre.toLowerCase();
+        this.precio  = parseFloat(precio);
+        this.serie = serie;
+        this.unidades = unidades;
+    }
+    }   
+
 function calcular (){
 
 while (articulo!="EXIT"){
     switch (articulo){
     case "Hamburguesa":
+        articulo.push(new checkout("valor Hamburguesa $",4500,  false, 1));
         precio= precio + 4500;
         console.log ("El valor de Hamburguesa es: $4.500 pesos");
         console.log ("El articulo esta disponible para la Venta \n Hay stock");
         break;
 
     case "Sandwiches":
+        articulo.push(new checkout("valor Sandwich $",2500,  false, 1));
         precio= precio + 2500;
         console.log("El valor de Sandwiches es: $2.500 pesos");
         console.log("El articulo esta disponible para la Venta \n Hay Stock");
         break;
 
     case "Pizzas":
+        articulo.push(new checkout("valor Pizzas $",7000,  false, 1));
         precio= precio + 7000;
         console.log("El valor de Pizzas es: $7.000 pesos");
         console.log("Este articulo se encuentra en Venta \n Hay stock");
@@ -108,6 +120,7 @@ while (articulo!="EXIT"){
         break;
 
     case "Alcohol":
+        articulo.push(new checkout("valor Alcohol $",10000,  false, 1));
         precio= precio + 10000;
         console.log("El valor de Alcohol es: $10.000 pesos")
         console.log("El articulo se encuentra en Venta \n Hay stock");
@@ -132,13 +145,13 @@ console.log("Selecciona tu preferencia");
 //objeto
 
 alert("Elegiste hamburguesa Hipster");
-const Micarrito={
+const miCarrito={
     nombre: ["Hamburguesa Hipster"],
     precio: ["4500"],
     serie: ["0302"],
 }
 console.log(Micarrito);
-console.log("Su selección es: " +Micarrito.nombre);
+console.log("Su selección es: " +miCarrito.nombre);
 
 //objetos constructores
 function objeto (nombre, precio, serie){
@@ -150,23 +163,23 @@ const objeto1= new objeto ("Hamburguesa Hipster", 4500 , "numero de serie 0302")
 const objeto2= new objeto ("Hamburguesa Americana", 5500, "numero de serie 1901");
 const objeto3= new objeto ("Hamburguesa el Panzón", 3500, "numero de serie 1234");
 
-alert("haz seleccionado: "+Micarrito + precio );
+alert("haz seleccionado: "+miCarrito + precio );
 
-const Checkout=["Hamburguesa", "Pizzas", "Papas Fritas", "Ensalada", "Sandwiches", "Cerveza", "Vino"];
-console.log (Checkout);
+const checkout=["Hamburguesa", "Pizzas", "Papas Fritas", "Ensalada", "Sandwiches", "Cerveza", "Vino"];
+console.log (checkout);
 
-console.log ("El resumen de tu compra es:" +Checkout[0,1,2,4]);
+console.log ("El resumen de tu compra es:" +checkout[0,1,2,4]);
 //recorrido del array
-for (let i=0; i<Checkout.length;i++){
-    console.log(Checkout[i]);
+for (let i=0; i<checkout.length;i++){
+    console.log(checkout[i]);
 }
 
 Checkout.push("Hamburguesa Hipster");
-console.log(Checkout);
+console.log(checkout);
 
 //metodo unshift
 Checkout.unshift("Cerveza");
-console.log(Checkout);
+console.log(checkout);
 
 //selecciona un Menú
 alert("¿Quieres agregar un Menú?");
