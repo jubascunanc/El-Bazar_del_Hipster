@@ -91,25 +91,25 @@ class Checkout {
     }   
 
 function calcular (){
-
+const compra=[]
 while (articulo!="EXIT"){
     switch (articulo){
     case "Hamburguesa":
-        articulo.push(new checkout("valor Hamburguesa $",4500,  false, 1));
+        articulo.push(new compra("valor Hamburguesa $",4500,  false, 1));
         precio= precio + 4500;
         console.log ("El valor de Hamburguesa es: $4.500 pesos");
         console.log ("El articulo esta disponible para la Venta \n Hay stock");
         break;
 
     case "Sandwiches":
-        articulo.push(new checkout("valor Sandwich $",2500,  false, 1));
+        articulo.push(new compra("valor Sandwich $",2500,  false, 1));
         precio= precio + 2500;
         console.log("El valor de Sandwiches es: $2.500 pesos");
         console.log("El articulo esta disponible para la Venta \n Hay Stock");
         break;
 
     case "Pizzas":
-        articulo.push(new checkout("valor Pizzas $",7000,  false, 1));
+        articulo.push(new compra("valor Pizzas $",7000,  false, 1));
         precio= precio + 7000;
         console.log("El valor de Pizzas es: $7.000 pesos");
         console.log("Este articulo se encuentra en Venta \n Hay stock");
@@ -120,7 +120,7 @@ while (articulo!="EXIT"){
         break;
 
     case "Alcohol":
-        articulo.push(new checkout("valor Alcohol $",10000,  false, 1));
+        articulo.push(new compra("valor Alcohol $",10000,  false, 1));
         precio= precio + 10000;
         console.log("El valor de Alcohol es: $10.000 pesos")
         console.log("El articulo se encuentra en Venta \n Hay stock");
@@ -150,7 +150,7 @@ const miCarrito={
     precio: ["4500"],
     serie: ["0302"],
 }
-console.log(Micarrito);
+console.log(miCarrito);
 console.log("Su selección es: " +miCarrito.nombre);
 
 //objetos constructores
@@ -174,11 +174,11 @@ for (let i=0; i<checkout.length;i++){
     console.log(checkout[i]);
 }
 
-Checkout.push("Hamburguesa Hipster");
+checkout.push("Hamburguesa Hipster");
 console.log(checkout);
 
 //metodo unshift
-Checkout.unshift("Cerveza");
+checkout.unshift("Cerveza");
 console.log(checkout);
 
 //selecciona un Menú
