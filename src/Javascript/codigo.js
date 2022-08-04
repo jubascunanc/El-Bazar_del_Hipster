@@ -1,6 +1,7 @@
 /*consola codigo js*/
 console.log ("Bienvenido a la compra rápida");
 console.log ("Aquí puedes ordenar facilmente");
+
 //Concatenacion
 let nombre = prompt ("Dame tu nombre:");
 let apellido = prompt("Dame tu apellido");
@@ -42,14 +43,14 @@ let Edad = AnioActual-AnioUsuario
 
 //Año legal para consumir alcohol//
 if (Edad>=18 ){
-    alert("Eres mayor de edad");
+    alert("Eres mayor de edad +18");
     console.log("Puedes comprar Alcohol");
 }
 
 let Alcohol=prompt("Ingresa que Alcohol deseas comprar");
 
 if (Alcohol== "Cerveza"){
-    alert("haz seleccionado la opción Cerveza")
+    alert("haz seleccionado la opción Cerveza");
     console.log("El usuario ha seleccionado la opción cerveza");
 }
 
@@ -70,7 +71,7 @@ else if (Alcohol== "cocktail"){
 
 //break point//
 if (Edad< 18){
-    alert("Eres menor de edad :(");
+    alert("Eres menor de edad -18");
     console.log("NO Puedes comprar Alcohol");
     }
     
@@ -81,35 +82,34 @@ let articulo= prompt ("ingresa los articulos que querés agregar a tu carrito: -
 let precio= 0;
 let precioConIva= 1.19;
 
-class Checkout {
+class Checkout{
     constructor(nombre, precio, serie, unidades ) {
         this.nombre  = nombre.toLowerCase();
         this.precio  = parseFloat(precio);
         this.serie = serie;
         this.unidades = unidades;
     }
-    }   
-
+}   
+    const compra=[];
 function calcular (){
-const compra=[]
 while (articulo!="EXIT"){
     switch (articulo){
     case "Hamburguesa":
-        articulo.push(new compra("valor Hamburguesa $",4500,  false, 1));
+        compra.push(new Checkout("valor Hamburguesa $",4500,  false, 1));
         precio= precio + 4500;
         console.log ("El valor de Hamburguesa es: $4.500 pesos");
         console.log ("El articulo esta disponible para la Venta \n Hay stock");
         break;
 
     case "Sandwiches":
-        articulo.push(new compra("valor Sandwich $",2500,  false, 1));
+        compra.push(new Checkout ("valor Sandwich $",2500,  false, 1));
         precio= precio + 2500;
         console.log("El valor de Sandwiches es: $2.500 pesos");
         console.log("El articulo esta disponible para la Venta \n Hay Stock");
         break;
 
     case "Pizzas":
-        articulo.push(new compra("valor Pizzas $",7000,  false, 1));
+        compra.push(new Checkout ("valor Pizzas $",7000,  false, 1));
         precio= precio + 7000;
         console.log("El valor de Pizzas es: $7.000 pesos");
         console.log("Este articulo se encuentra en Venta \n Hay stock");
@@ -120,7 +120,7 @@ while (articulo!="EXIT"){
         break;
 
     case "Alcohol":
-        articulo.push(new compra("valor Alcohol $",10000,  false, 1));
+        compra.push(new Checkout ("valor Alcohol $",10000,  false, 1));
         precio= precio + 10000;
         console.log("El valor de Alcohol es: $10.000 pesos")
         console.log("El articulo se encuentra en Venta \n Hay stock");
@@ -138,7 +138,6 @@ console.log("Total a Pagar $" +precioConIva);
 calcular();
 
 
-
 let Objetos=prompt("Ingresa tu preferencia:")
 console.log("Selecciona tu preferencia");
 
@@ -150,15 +149,18 @@ const miCarrito={
     precio: ["4500"],
     serie: ["0302"],
 }
+
 console.log(miCarrito);
 console.log("Su selección es: " +miCarrito.nombre);
 
 //objetos constructores
+
 function objeto (nombre, precio, serie){
     this.nombre= nombre;
     this.precio= precio;
     this.serie= serie;
 }
+
 const objeto1= new objeto ("Hamburguesa Hipster", 4500 , "numero de serie 0302");
 const objeto2= new objeto ("Hamburguesa Americana", 5500, "numero de serie 1901");
 const objeto3= new objeto ("Hamburguesa el Panzón", 3500, "numero de serie 1234");
@@ -169,6 +171,7 @@ const checkout=["Hamburguesa", "Pizzas", "Papas Fritas", "Ensalada", "Sandwiches
 console.log (checkout);
 
 console.log ("El resumen de tu compra es:" +checkout[0,1,2,4]);
+
 //recorrido del array
 for (let i=0; i<checkout.length;i++){
     console.log(checkout[i]);
