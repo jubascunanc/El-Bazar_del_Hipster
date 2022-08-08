@@ -50,7 +50,7 @@ if (Edad>=18 ){
 let Alcohol=prompt("Ingresa que Alcohol deseas comprar");
 
 if (Alcohol== "Cerveza"){
-    alert("haz seleccionado la opción Cerveza");
+    alert("haz seleccionado la opción Cerveza precio: 2.700 pesos");
     console.log("El usuario ha seleccionado la opción cerveza");
 }
 
@@ -76,15 +76,6 @@ if (Edad< 18){
     }
     
 
-//carrito de compras//
-
-let articulo= prompt ("ingresa los articulos que querés agregar a tu carrito: -EXIT para salir \n Hamburguesa \n Sandwiches \n Pizzas \n Ensalada \n Alcohol");
-let precio= 0;
-let precioConIva= 1.19;
-
-
-    const compra=[];
-
     class Checkout{
         constructor(nombre, precio, stock, unidades ) {
             this.nombre  = nombre.toLowerCase();
@@ -94,7 +85,17 @@ let precioConIva= 1.19;
         }
     }   
 
+
+//carrito de compras//
+
+let articulo= prompt ("ingresa los articulos que querés agregar a tu carrito: -EXIT para salir \n Hamburguesa \n Sandwiches \n Pizzas \n Ensalada \n Alcohol");
+let precio= 0;
+let precioConIva= 1.19;
+
+const compra=[];
+
 function calcular (){
+
 while (articulo!="EXIT"){
     switch (articulo){
     case "Hamburguesa":
@@ -141,20 +142,16 @@ articulo= prompt("ingresa los articulos que querés agregar a tu carrito: -EXIT 
 }
 let precioConIva= precio* 1.19;
 console.log("Total a Pagar $" +precioConIva);
-console.table(compra)
-const stock=compra.filter((articulo) => articulo.stock.includes("Sin stock"))
-console.log("Este articulo no está disponible:")
-console.table(stock);
+
 }
 calcular();
 
 
-//preferencia compra
+//selección de orden de compra
 let Objetos=prompt("Ingresa tu preferencia:")
 console.log("Selecciona tu preferencia");
 
 //objeto
-
 alert("Elegiste hamburguesa Hipster");
 const miCarrito={
     nombre: ["Hamburguesa Hipster"],
@@ -162,40 +159,72 @@ const miCarrito={
     stock: ["Si Hay stock"],
 }
 
+
 console.log(miCarrito);
 console.log("Su selección es: " +miCarrito.nombre);
 
 //objetos constructores
 
-function objeto (nombre, precio, stock){
-    this.nombre= nombre;
-    this.precio= precio;
-    this.stock= stock;
-}
-
-const objeto1= new objeto ("Hamburguesa Hipster", 4500 , 100);
-const objeto2= new objeto ("Hamburguesa Americana", 5500, 100);
-const objeto3= new objeto ("Hamburguesa el Panzón", 3500, 100);
-
 alert("haz seleccionado: "+miCarrito + precio );
 
-const checkout=["Hamburguesa", "Pizzas", "Papas Fritas", "Ensalada", "Sandwiches", "Cerveza", "Vino"];
+const checkout=["Sandwiches", "Pizzas", "Papas Fritas", "Ensalada", "Hamburguesa", "Cerveza", "Vino"];
 console.log (checkout);
 
 console.log ("El resumen de tu compra es:" +checkout[0,1,2,4]);
 
 //recorrido del array
-for (let i=0; i<checkout.length;i++){
+for (let i=0; i<Checkout.length;i++){
     console.log(checkout[i]);
 }
 
-checkout.push("Hamburguesa Hipster");
-console.log(checkout);
+//recorrido del array
+const Totalprecios=[4500,2500,7000,10000];
+let total=0;
+function sumarTotal (precio){
+    total +=precio;
+}
 
-//metodo unshift
-checkout.unshift("Cerveza");
-console.log(checkout);
+function realizar (operacion,Totalprecios){
+    for (total of Totalprecios){
+        operacion(Totalprecios);
+    }
+}
+realizar(sumarTotal,Totalprecios);
+console.log("La suma de todos tus productos es: $" +Totalprecios);
+console.table(Totalprecios);
 
+//Lista de compra
+const orden=[
+{
+ producto: "Hamburguesa Hipster",
+ categoría: "Hamburguesa",
+ precio: 4500,
+ stock: 100,
+},
+{
+ producto: "Pizza Vegetariana",
+ categoría: "Pizzas",
+ precio: 6800,
+ stock: 100,
+},
+{
+ producto: "Papas fritas",
+ categoría: "Papas",
+ precio: 1500,
+ stock: 100,
+},
+{
+ producto: "Cerveza",
+ categoría: "Alcohol",
+ precio: 3800,
+ stock:100,
+},
+
+];
+//For each
+//imprimo el [nombre y precio] de la lista
+orden.forEach((comida)=>console.log(comida.producto));
+console.log("¿Estas listo para pagar?");
 
 
 //selecciona un Menú
@@ -255,13 +284,23 @@ switch (entrada){
 }
 inscripcion = prompt("¿NO tienes una suscripción? presiona -Esc para salir");
 
-let producto = prompt("Elija su opción de despacho aquí");
+//opciones de entrega
+let entrega = prompt("Elija su opción de despacho aquí");
 
+if(entrega== "delivery"){
+    alert("Haz seleccionado la opción delivery");
+    console.log("El usuario prefiere delivery");
+}
+if(entrega== "retiro"){
+    alert("Haz seleccionado la opción retiro");
+    console.log("El usuario prefiere retiro");
+}
 
 let texto="";
-let palabra=prompt("Ingresa instrucciones de despacho (s-para salir de la ventana)");
+let palabra=prompt("Ingresa una dirección (s-para salir de la ventana)");
 while(palabra!="s"){
     texto = texto + "" + palabra;
-    palabra=prompt("ingresa una instrucción al despachador (s-para salir de la ventana)");
+console.log("dirección de entrega: "+texto);
+    palabra=prompt("ingresa una dirección (s-para salir de la ventana)");
 }
 
