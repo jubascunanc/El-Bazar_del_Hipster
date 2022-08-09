@@ -5,7 +5,7 @@ let menuPrincipal=document.getElementById("Inicio");
 console.log(menuPrincipal.innerHTML);
 
 //ConstructorClassById
-class card{
+class cards{
     constructor(nombre, precio, stock, unidades ) {
         this.nombre  = nombre.toLowerCase();
         this.precio  = parseFloat(precio);
@@ -16,52 +16,16 @@ class card{
 }   
 
 //Lista de compra
-const card=[
-    {
-     producto: "Hamburguesa Hipster",
-     categoría: "Hamburguesa",
-     precio: 4500,
-     stock: 100,
-     imagen: ""
-    },
-    {
-     producto: "Pizza Vegetariana",
-     categoría: "Pizzas",
-     precio: 6800,
-     stock: 100,
-     imagen: ""
-    },
-    {
-     producto: "Papas fritas",
-     categoría: "Papas",
-     precio: 1500,
-     stock: 100,
-     imagen: ""
-    },
-    {
-     producto: "Cerveza",
-     categoría: "Alcohol",
-     precio: 3800,
-     stock:100,
-     imagen: ""
-    },
-    
-    ];
-    //For each
-    //imprimo el [nombre y precio] de la lista
-    orden.forEach((comida)=>console.log(comida.producto));
-    console.log("¿Estas listo para pagar?");
-    
-
-    let cards=document.getElementById("grillado");
-    for(const card of grillado ){
+  
+    let orden=document.getElementById("grillado");
+    for(const orden of grillado ){
         let card=document.createElement("div");
         card.className="card col-3 text-align-center";
         card.innerHTML=`
         <div class="card" style="width: 18rem;">
-        <img src= ${card.imagen} class="card-img-top" alt="...">
-                <h5 class="card-title">${card.nombre}</h5>
-                <p class="card-text">${card.precio}</p>
+        <img src= ${orden.imagen} class="card-img-top" alt="...">
+                <h5 class="card-title">${orden.nombre}</h5>
+                <p class="card-text">${orden.precio}</p>
                 <a href="#" id = "miBoton" class="btn btn-primary">COMPRAR</a>
             </div>
         `;
@@ -69,3 +33,7 @@ const card=[
     }
     
     let boton = document.getElementsByClassName("btn")    
+
+    //claseById Boton
+    let  Form=document.getElementById("Boton");
+    console.log(Form.innerHTML);
