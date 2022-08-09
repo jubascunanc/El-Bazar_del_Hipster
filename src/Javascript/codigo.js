@@ -193,39 +193,6 @@ realizar(sumarTotal,Totalprecios);
 console.log("La suma de todos tus productos es: $" +Totalprecios);
 console.table(Totalprecios);
 
-//Lista de compra
-const orden=[
-{
- producto: "Hamburguesa Hipster",
- categoría: "Hamburguesa",
- precio: 4500,
- stock: 100,
-},
-{
- producto: "Pizza Vegetariana",
- categoría: "Pizzas",
- precio: 6800,
- stock: 100,
-},
-{
- producto: "Papas fritas",
- categoría: "Papas",
- precio: 1500,
- stock: 100,
-},
-{
- producto: "Cerveza",
- categoría: "Alcohol",
- precio: 3800,
- stock:100,
-},
-
-];
-//For each
-//imprimo el [nombre y precio] de la lista
-orden.forEach((comida)=>console.log(comida.producto));
-console.log("¿Estas listo para pagar?");
-
 
 //selecciona un Menú
 alert("¿Quieres agregar un Menú?");

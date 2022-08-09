@@ -25,6 +25,9 @@
   <link href="./css/estilos sass/_import-sass.scss">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer src="./src/Javascript/codigo.js"></script>
+  <script defer src="./src/Javascript/busqueda.js"></script>
+  <script defer src="./src/Javascript/dom.js"></script>
+  
   <title> El Bazar del Hipster </title>
 </head>
 
@@ -72,9 +75,9 @@ data-aos-easing="ease-in-sine">
    <!--Menú Navegación-->
   
    <main>
-    <div class="Menu">
+    <div class="Menu" id="Inicio">
      <nav>
-       <div class="bottom">
+       <div class="bottom" id="Boton">
          <a href= "./index.html"> Inicio </a>
          <a href="./src/paginas/mercado.html"> Mercado </a>
          <a href="./src/paginas/nosotros.html"> Nosotros </a>
@@ -103,7 +106,7 @@ data-aos-easing="ease-in-sine">
 
 <!--Usuario y Contraseña-->
 <div class="Box">
-  <div class="Usuario" width="20px">
+  <div class="Usuario" width="20px" id="sesion">
     <img src="./src/multimedia/usuario.png" alt="User" width="30px" color="white">
   <p>
     <label for="Usuario"> Usuario </label>
@@ -118,7 +121,7 @@ data-aos-easing="ease-in-sine">
   
   <div class="btn">
   <p>
-    <a href="./src/paginas/miportal.html"><input type="submit" value="Enviar"></a> 
+    <a href="./src/paginas/miportal.html"><input type="submit" value="Enviar" id="Boton"></a> 
     <input type="reset">
   </p>
   
@@ -247,7 +250,7 @@ data-aos-easing="ease-in-sine">
      <!--comercio-->
      <div class="grillado">
 
-      <div class="vertical">
+      <div class="vertical" id="galeria">
         
         <img src="./src/imagenes/Hamburguesa.jpg" alt="hamburguesa" width="300px">
 
@@ -260,7 +263,7 @@ data-aos-easing="ease-in-sine">
 <!--click pedido-->
 <form>
   <div class="btn">
-  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir"></a> 
+  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir" id="Boton"></a> 
   <input type="reset">
   </form>
 </div>
@@ -282,7 +285,7 @@ data-aos-easing="ease-in-sine">
 <!--click pedido-->
 <form>
   <div class="btn">
-  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir"></a> 
+  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir" id="Boton"></a> 
   <input type="reset">
   </form>
 </div>
@@ -302,7 +305,7 @@ data-aos-easing="ease-in-sine">
  <!--click pedido-->
 <form>
   <div class="btn">
-  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir"></a> 
+  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir" id="Boton"></a> 
   <input type="reset">
   </form>
 </div>
@@ -311,7 +314,7 @@ data-aos-easing="ease-in-sine">
     <!--producto-->
          <div class="vertical">
           
-           <img src="./src/imagenes/Hambuguesas-veganas-de-tempeh-v.webp" width="300px">
+           <img src="./src/imagenes/Hambuguesas-veganas-de-tempeh-v.webp" width="Boton">
      
            <!--Descripción de comida-->
       <div data-aos="fade-down">
@@ -323,7 +326,7 @@ data-aos-easing="ease-in-sine">
 <!--click pedido-->
 <form>
   <div class="btn">
-  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir"></a> 
+  <a href="./src/paginas/carrito.html"><input type="button" value="Pedir" id="Boton"></a> 
   <input type="reset">
   </form>
 </div>
@@ -344,7 +347,7 @@ data-aos-easing="ease-in-sine">
     <!--click pedido-->
 <form>
   <div class="btn">
- <a href="./src/paginas/carrito.html"><input type="button" value="Pedir"></a>
+ <a href="./src/paginas/carrito.html"><input type="button" value="Pedir" id="Boton"></a>
   <input type="reset">
   </form>
 </div>
@@ -386,7 +389,7 @@ data-aos-easing="ease-in-sine">
   <!--click pedido-->
 <form>
   <div class="btn">
-  <input type="button" value="Pedir">
+  <input type="button" value="Pedir" id="Boton">
   <a href="./src/paginas/carrito.html">
   <input type="reset">
   </a>
@@ -402,7 +405,7 @@ data-aos-easing="ease-in-sine">
     <!--click pedido-->
   <form>
      <div class="btn">
-    <input type="button" value="Pedir">
+    <input type="button" value="Pedir" id="Boton">
     <a href="./src/paginas/carrito.html">
     <input type="reset">
     </a>
@@ -418,7 +421,7 @@ data-aos-easing="ease-in-sine">
      <!--click pedido-->
  <form>
   <div class="btn">
-  <input type="button" value="Pedir">
+  <input type="button" value="Pedir" id="Boton">
   <a href="./src/paginas/carrito.html">
   <input type="reset">
   </a>
@@ -434,7 +437,7 @@ data-aos-easing="ease-in-sine">
       <!--click pedido-->
   <form>
     <div class="btn">
-    <input type="button" value="Pedir">
+    <input type="button" value="Pedir" id="Boton">
     <a href="./src/paginas/carrito.html">
     <input type="reset">
     </a>
@@ -450,7 +453,7 @@ data-aos-easing="ease-in-sine">
       <!--click pedido-->
       <form>
         <div class="btn">
-        <input type="button" value="Pedir">
+        <input type="button" value="Pedir" id="Boton">
         <a href="./src/paginas/carrito.html">
         <input type="reset">
         </a>
@@ -488,7 +491,7 @@ data-aos-easing="ease-in-sine">
         <!--click pedido-->
       <form>
         <div class="btn">
-        <input type="button" value="Pedir">
+        <input type="button" value="Pedir" id="Boton">
         <a href="./src/paginas/carrito.html">
         <input type="reset">
         </a>
@@ -504,7 +507,7 @@ data-aos-easing="ease-in-sine">
         <!--click pedido-->
         <form>
           <div class="btn">
-          <input type="button" value="Pedir">
+          <input type="button" value="Pedir" id="Boton" >
           <a href="./src/paginas/carrito.html">
           <input type="reset">
           </a>
@@ -520,7 +523,7 @@ data-aos-easing="ease-in-sine">
         <!--click pedido-->
         <form>
           <div class="btn">
-          <input type="button" value="Pedir">
+          <input type="button" value="Pedir" id="Boton" >
           <a href="./src/paginas/carrito.html">
           <input type="reset">
           </a>
@@ -537,7 +540,7 @@ data-aos-easing="ease-in-sine">
         <!--click pedido-->
         <form>
           <div class="btn">
-          <input type="button" value="Pedir">
+          <input type="button" value="Pedir" id="Boton" >
           <a href="./src/paginas/carrito.html">
           <input type="reset">
           </a>
@@ -552,7 +555,7 @@ data-aos-easing="ease-in-sine">
         <!--click pedido-->
         <form>
           <div class="btn">
-          <input type="button" value="Pedir">
+          <input type="button" value="Pedir" id="Boton">
           <a href="./src/paginas/carrito.html">
           <input type="reset">
           </a>
@@ -596,7 +599,7 @@ data-aos-easing="ease-in-sine">
             <!--click pedido-->
         <form>
           <div class="btn">
-          <input type="button" value="Pedir">
+          <input type="button" value="Pedir" id="Boton" >
           <a href="./src/paginas/carrito.html">
           <input type="reset">
           </a>
@@ -616,7 +619,7 @@ data-aos-easing="ease-in-sine">
        <!--click pedido-->
         <form>
           <div class="btn">
-          <input type="button" value="Pedir">
+          <input type="button" value="Pedir" id="Boton">
           <a href="./src/paginas/carrito.html">
           <input type="reset">
           </a>
@@ -637,7 +640,7 @@ data-aos-easing="ease-in-sine">
             <!--click pedido-->
             <form>
               <div class="btn">
-              <input type="button" value="Pedir">
+              <input type="button" value="Pedir" id="Boton">
               <a href="./src/paginas/carrito.html"></a>
               <input type="reset">
               </form>
@@ -658,7 +661,7 @@ data-aos-easing="ease-in-sine">
            <!--click pedido-->
          <form>
           <div class="btn">
-          <input type="button" value="Pedir">
+          <input type="button" value="Pedir" id="Boton">
           <a href="./src/paginas/carrito.html">
           <input type="reset">
           </a>
@@ -719,14 +722,12 @@ data-aos-easing="ease-in-sine">
 
           <p>
             <a href="./src/paginas/miportal.html">
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" id="form">
             <input type="reset" value="Borrar"></a>
           </p>
         </div>
           
-  <form action="" method="get" enctype="text/plain">
-  
-  </form>
+  <form action="" method="get" enctype="text/plain"> </form>
 
 
 <!-- ----------------------------------------------------------------------- -->
@@ -787,7 +788,7 @@ data-aos-easing="ease-in-sine">
       <li> <a class="btn" href="https://www.instagram.com/"> Instagram </a> </li>
       <li> <a class="btn" href="https://twitter.com/"> twitter </a> </li>
     </ul>
-    <div class="powr-paypal-button" id="507c94aa_1654184811"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+    <div class="powr-paypal-button" id="compra"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
 
          </div>
         </div>
