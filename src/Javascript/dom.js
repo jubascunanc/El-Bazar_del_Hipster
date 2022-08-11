@@ -4,6 +4,39 @@ console.log(document.main);
 let menuPrincipal=document.getElementById("Inicio");
 console.log(menuPrincipal.innerHTML);
 
+const comanda=[
+{
+  producto: "Hamburguesa hispter",
+  categoria: "Hamburguesa",
+  precio: 4500,
+  stock: 100,
+},
+{
+  producto: "Pizza Vegetariana",
+  categoria: "Pizzas",
+  precio: 6800,
+  stock: 100,
+},
+{
+  producto: "Papas fritas",
+  categoria: "Papas",
+  precio: 1500,
+  stock:100,
+},
+{
+  producto: "Cerveza",
+  categoria: "Alcohol",
+  precio: 2700,
+  stock: 100,
+},
+];
+
+    //For each
+    //imprimo el [nombre y precio] de la lista
+    comanda.forEach((comanda)=>console.log(comanda.producto));
+    console.log("¿Estas listo para pagar?");
+    
+
 //ConstructorClassById
 class cards{
     constructor(nombre, precio, stock, unidades ) {
@@ -16,20 +49,20 @@ class cards{
 }   
 
 //Lista de compra
-  
-    let orden=document.getElementById("grillado");
-    for(const orden of grillado ){
+
+    let galeria=document.getElementById("galeria");
+    for(const auxiliar of comanda ){
         let card=document.createElement("div");
-        card.className="card col-3 text-align-center";
-        card.innerHTML=`
+        cards.className="card col-3 text-align-center";
+        cards.innerHTML=`
         <div class="card" style="width: 18rem;">
-        <img src= ${orden.imagen} class="card-img-top" alt="...">
-                <h5 class="card-title">${orden.nombre}</h5>
-                <p class="card-text">${orden.precio}</p>
+        <img src= ${auxiliar.imagen} class="card-img-top" alt="...">
+                <h5 class="card-title">${auxiliar.nombre}</h5>
+                <p class="card-text">${auxiliar.precio}</p>
                 <a href="#" id = "miBoton" class="btn btn-primary">COMPRAR</a>
             </div>
         `;
-        cards.append(card);
+        galeria.append(comanda);
     }
     
     let boton = document.getElementsByClassName("btn")    
