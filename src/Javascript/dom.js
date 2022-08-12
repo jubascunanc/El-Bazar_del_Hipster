@@ -1,8 +1,8 @@
 //DOM dir
 console.log(document.main);
 //GetElementByID
-let menuPrincipal=document.getElementById("Inicio");
-console.log(menuPrincipal.innerHTML);
+let auxiliar=document.getElementsByClassName("galeria");
+console.log(auxiliar.innerHTML);
 
 const comanda=[
 {
@@ -52,21 +52,18 @@ class cards{
 
     let galeria=document.getElementById("galeria");
     for(const auxiliar of comanda ){
-        let card=document.createElement("div");
+        let cards=document.createElement("div");
         cards.className="card col-3 text-align-center";
         cards.innerHTML=`
         <div class="card" style="width: 18rem;">
         <img src= ${auxiliar.imagen} class="card-img-top" alt="...">
                 <h5 class="card-title">${auxiliar.nombre}</h5>
                 <p class="card-text">${auxiliar.precio}</p>
-                <a href="#" id = "miBoton" class="btn btn-primary">COMPRAR</a>
+                <a href="#" id = "btn" class="btn btn-primary">COMPRAR</a>
             </div>
         `;
-        galeria.append(comanda);
+        galeria.append(cards);
     }
     
+    //
     let boton = document.getElementsByClassName("btn")    
-
-    //claseById Boton
-    let  Form=document.getElementById("Boton");
-    console.log(Form.innerHTML);
