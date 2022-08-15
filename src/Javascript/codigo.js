@@ -193,7 +193,7 @@ realizar(sumarTotal,Totalprecios);
 console.log("La suma de todos tus productos es: $" +Totalprecios);
 console.table(Totalprecios);
 
-
+//entra elegir menú//
 
 //selecciona un Menú
 alert("¿Quieres agregar un Menú?");
@@ -239,11 +239,11 @@ let inscripcion = prompt("¿NO tienes una suscripción? presiona -Esc para salir
 //entra while//
 while (entrada != "Esc"){
 switch (entrada){
-    case "Si Quiero":
+    case "Si":
         alert("¿Quieres suscribirte?");
         console.log ("suscribete para beneficios")
         break;
-    case "No me interesa":
+    case "No":
         alert("No quieres ser miembro");
         console.log ("No eres miembro");
     default:

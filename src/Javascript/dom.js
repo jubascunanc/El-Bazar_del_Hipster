@@ -6,40 +6,51 @@ console.log(auxiliar.innerHTML);
 
 const comanda=[
 {
-  producto: "Hamburguesa hispter",
+  nombre: "Hamburguesa hispter",
   categoria: "Hamburguesa",
   precio: 4500,
   stock: 100,
+  imagen: src="./src/imagenes/Hamburguesa.jpg",
 },
 {
-  producto: "Pizza Vegetariana",
-  categoria: "Pizzas",
+  nombre: "Hamburguesa Clasica",
+  categoria: "Hamburguesa",
+  precio: 4700,
+  stock: 100,
+  imagen: src="./src/imagenes/burguerassets.jpg",
+},
+{
+  nombre: "Hamburguesa Salmon",
+  categoria: "Hamburguesa",
   precio: 6800,
   stock: 100,
+  imagen: src="./src/imagenes/burguerfooter.jpg",
 },
 {
-  producto: "Papas fritas",
-  categoria: "Papas",
-  precio: 1500,
+  nombre: "Hamburguesa Vegana",
+  categoria: "Hamburguesa",
+  precio: 4700,
   stock:100,
+  imagen: src="./src/imagenes/Hamburguesas-veganas-de-tempeh-v.webp",
 },
 {
-  producto: "Cerveza",
-  categoria: "Alcohol",
-  precio: 2700,
+  nombre: "Hamburguesa Alemana",
+  categoria: "Hamburguesa",
+  precio: 5200,
   stock: 100,
+  imagen: src="./src/imagenes/hamburguesaalemana.jpeg",
 },
 ];
 
     //For each
     //imprimo el [nombre y precio] de la lista
-    comanda.forEach((comanda)=>console.log(comanda.producto));
+    comanda.forEach((comanda)=>console.log(comanda.nombre));
     console.log("¿Estas listo para pagar?");
     
 
 //ConstructorClassById
 class cards{
-    constructor(nombre, precio, stock, unidades ) {
+    constructor(nombre, precio, stock, unidades,imagen) {
         this.nombre  = nombre.toLowerCase();
         this.precio  = parseFloat(precio);
         this.stock = stock;
@@ -53,12 +64,12 @@ class cards{
     let galeria=document.getElementById("galeria");
     for(const auxiliar of comanda ){
         let cards=document.createElement("div");
-        cards.className="card col-3 text-align-center";
+        cards.className="cards";
         cards.innerHTML=`
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 16rem;">
         <img src= ${auxiliar.imagen} class="card-img-top" alt="...">
                 <h5 class="card-title">${auxiliar.nombre}</h5>
-                <p class="card-text">${auxiliar.precio}</p>
+                <p class="card-text" style= "color: black;">${auxiliar.precio}</p>
                 <a href="#" id = "btn" class="btn btn-primary">COMPRAR</a>
             </div>
         `;
@@ -66,4 +77,4 @@ class cards{
     }
     
     //
-    let boton = document.getElementsByClassName("btn")    
+    let boton = document.getElementsByClassName("boton")    

@@ -455,8 +455,18 @@ footer .center-footer {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+img .galeria{
+justify-content: center;
+display:flexbox;
+flex-direction: row;
+width:100vw;
+}
 
+.card-img-top{
+  width: 80%;
+}
 
+/*media queries*/
 @media screen and (max-width: 320px) {
   .grillado {
     -ms-grid-columns: 1fr;
