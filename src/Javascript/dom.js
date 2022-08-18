@@ -79,12 +79,18 @@ class cards{
     //elemento boton
     let boton = document.getElementsByClassName("boton")    
 
+
     //add event listener
 
   let btn= document.getElementById("galeria")
   btn.addEventListener("click", respuestaClick)
   function respuestaClick(){
+Swal.fire({
+title: 'Compra',
+texto: 'OK',
+icon: 'success',
+});
+
     console.log("Click evento");
     console.table(comanda);
-    alert("Agregaste a  tu carrito" );
   }
