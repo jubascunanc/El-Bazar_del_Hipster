@@ -70,11 +70,21 @@ class cards{
         <img src= ${auxiliar.imagen} class="card-img-top" alt="...">
                 <h5 class="card-title">${auxiliar.nombre}</h5>
                 <p class="card-text" style= "color: black;">${auxiliar.precio}</p>
-                <a href="#" id = "btn" class="btn btn-primary">COMPRAR</a>
+                <a id = "btn" class="btn btn-primary">COMPRAR</a>
             </div>
         `;
         galeria.append(cards);
     }
     
-    //
+    //elemento boton
     let boton = document.getElementsByClassName("boton")    
+
+    //add event listener
+
+  let btn= document.getElementById("galeria")
+  btn.addEventListener("click", respuestaClick)
+  function respuestaClick(){
+    console.log("Click evento");
+    console.table(comanda);
+    alert("Agregaste a  tu carrito" );
+  }

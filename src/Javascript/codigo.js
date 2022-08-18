@@ -88,6 +88,7 @@ if (Edad< 18){
 
 //carrito de compras//
 
+
 let articulo= prompt ("ingresa los articulos que querés agregar a tu carrito: -EXIT para salir \n Hamburguesa \n Sandwiches \n Pizzas \n Ensalada \n Alcohol");
 let precio= 0;
 let precioConIva= 1.19;
@@ -101,7 +102,6 @@ while (articulo!="EXIT"){
     case "Hamburguesa":
         compra.push(new Checkout("valor Hamburguesa $",4500,  false, 1));
         precio= precio + 4500;
-        alert("Haz seleccionado la Hamburguesa Hipster precio: $4500 pesos");
         console.log ("El valor de Hamburguesa es: $4.500 pesos");
         console.log ("El articulo esta disponible para la Venta \n Hay stock");
         break;
@@ -109,7 +109,6 @@ while (articulo!="EXIT"){
     case "Sandwiches":
         compra.push(new Checkout ("valor Sandwich $",2500,  false, 1));
         precio= precio + 2500;
-        alert("Haz seleccionado el Sandwich precio: $2500 pesos");
         console.log("El valor de Sandwiches es: $2.500 pesos");
         console.log("El articulo esta disponible para la Venta \n Hay Stock");
         break;
@@ -117,7 +116,6 @@ while (articulo!="EXIT"){
     case "Pizzas":
         compra.push(new Checkout ("valor Pizzas $",7000,  false, 1));
         precio= precio + 7000;
-        alert("Haz seleccionado Pizzas precio: $7.000 pesos");
         console.log("El valor de Pizzas es: $7.000 pesos");
         console.log("Este articulo se encuentra en Venta \n Hay stock");
         break;
@@ -129,7 +127,6 @@ while (articulo!="EXIT"){
     case "Alcohol":
         compra.push(new Checkout ("valor Alcohol $",10000,  false, 1));
         precio= precio + 10000;
-        alert("Haz seleccionado Alcohol precio: $10000 pesos");
         console.log("El valor de Alcohol es: $10.000 pesos")
         console.log("El articulo se encuentra en Venta \n Hay stock");
         break;
@@ -152,7 +149,6 @@ let Objetos=prompt("Ingresa tu preferencia:")
 console.log("Selecciona tu preferencia");
 
 //objeto
-alert("Elegiste hamburguesa Hipster");
 const miCarrito={
     nombre: ["Hamburguesa Hipster"],
     precio: ["4500"],
@@ -193,25 +189,7 @@ realizar(sumarTotal,Totalprecios);
 console.log("La suma de todos tus productos es: $" +Totalprecios);
 console.table(Totalprecios);
 
-//entra elegir menú//
-
-//selecciona un Menú
-alert("¿Quieres agregar un Menú?");
-let menu=prompt("selecciona tu Menú");
-
-if (menu=="Menú familiar"){
-alert("Haz seleccionado el: Menú Familiar");
-   console.log ("El usuario ha seleccionado el Menú Familiar");
-}
-if (menu== "Box family"){
-alert(" Haz seleccionado el Menú: Box family");
-    console.log ("El usuario ha seleccionado la opción Box family");
-}
-if (menu== "Doble Box"){
-alert(" Haz seleccionado el Menú: Doble Box");
-    console.log(" El usuario ha seleccionado la opción Doble Box");
-}
-
+//Identificar usuario nuevo o Antiguo//
 
 let entrada = prompt("¿Ya haz comprado antes con nosotros? presiona -Esc para salir");
 while (entrada != "Esc"){
@@ -233,24 +211,6 @@ switch (entrada){
 entrada = prompt("¿Ya haz comprado antes con nosotros? presiona -Esc para salir");
 break;
 }
-
-//suscripción
-let inscripcion = prompt("¿NO tienes una suscripción? presiona -Esc para salir");
-//entra while//
-while (entrada != "Esc"){
-switch (entrada){
-    case "Si":
-        alert("¿Quieres suscribirte?");
-        console.log ("suscribete para beneficios")
-        break;
-    case "No":
-        alert("No quieres ser miembro");
-        console.log ("No eres miembro");
-    default:
-        alert("...");
-}
-}
-inscripcion = prompt("¿NO tienes una suscripción? presiona -Esc para salir");
 
 //opciones de entrega
 let entrega = prompt("Elija su opción de despacho aquí");
