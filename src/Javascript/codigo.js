@@ -22,19 +22,21 @@ console.log("usuario ingresado:"+usuario);
 alert("usuario ingresado:"+usuario);
 
 //Ingresa tu contraseña//
-let password;
-for (let i=1; i<=3;i++){
-password=prompt("ingresa tu contraseña");
+let claveUsuario= prompt("Ingresa tu clave del sitio, X para salir de la ventana");
 
-if (password= "123456"){
-    alert("contraseña correcta");
-    console.log("Bienvenido Usuario");
+if (claveUsuario= "123456"){
+   localStorage.setItem("password", true);
+   let psswUser=localStorage.getItem("password");
+   console.log("Contraseña:" +psswUser);
+}
+while (claveUsuario !="123456"){
+    localStorage.setItem("password", false);
+    let psswUser=localStorage.getItem("password");
+    console.log("Contraseña:" +psswUser);
     break;
-}else{
-    password!="123456";
-    console.log("clave erronea, restan 3" + (3-i) + "intentos");
 }
-}
+
+claveUsuario= prompt("Ingresa tu clave del sitio, X para salir de la ventana");
 
 //Verificación de edad legal//
 const AnioActual=2022;
@@ -45,28 +47,6 @@ let Edad = AnioActual-AnioUsuario
 if (Edad>=18 ){
     alert("Eres mayor de edad +18");
     console.log("Puedes comprar Alcohol");
-}
-
-let Alcohol=prompt("Ingresa que Alcohol deseas comprar");
-
-if (Alcohol== "Cerveza"){
-    alert("haz seleccionado la opción Cerveza precio: 2.700 pesos");
-    console.log("El usuario ha seleccionado la opción cerveza");
-}
-
-else if (Alcohol== "Vino"){
-    alert ("haz seleccionado la opción Vino");
-    console.log("El usuario ha seleccionado la opción Vino");
-}   
-
-else if (Alcohol== "Ron"){
-    alert("haz seleccionado la opción Ron");
-    console.log("El usuario ha seleccionado la opción RON");
-}
-
-else if (Alcohol== "cocktail"){
-    alert("haz seleccionado la opción Cocktail");
-    console.log("El usuario ha seleccionado la opción Cocktail");
 }
 
 //break point//
@@ -85,69 +65,7 @@ if (Edad< 18){
         }
     }   
 
-
-//carrito de compras//
-
-
-let articulo= prompt ("ingresa los articulos que querés agregar a tu carrito: -EXIT para salir \n Hamburguesa \n Sandwiches \n Pizzas \n Ensalada \n Alcohol");
-let precio= 0;
-let precioConIva= 1.19;
-
-const compra=[];
-
-function calcular (){
-
-while (articulo!="EXIT"){
-    switch (articulo){
-    case "Hamburguesa":
-        compra.push(new Checkout("valor Hamburguesa $",4500,  false, 1));
-        precio= precio + 4500;
-        console.log ("El valor de Hamburguesa es: $4.500 pesos");
-        console.log ("El articulo esta disponible para la Venta \n Hay stock");
-        break;
-
-    case "Sandwiches":
-        compra.push(new Checkout ("valor Sandwich $",2500,  false, 1));
-        precio= precio + 2500;
-        console.log("El valor de Sandwiches es: $2.500 pesos");
-        console.log("El articulo esta disponible para la Venta \n Hay Stock");
-        break;
-
-    case "Pizzas":
-        compra.push(new Checkout ("valor Pizzas $",7000,  false, 1));
-        precio= precio + 7000;
-        console.log("El valor de Pizzas es: $7.000 pesos");
-        console.log("Este articulo se encuentra en Venta \n Hay stock");
-        break;
-
-    case "Ensalada":
-        console.log ("El articulo no se encuentra en Venta \n NO hay Stock");
-        break;
-
-    case "Alcohol":
-        compra.push(new Checkout ("valor Alcohol $",10000,  false, 1));
-        precio= precio + 10000;
-        console.log("El valor de Alcohol es: $10.000 pesos")
-        console.log("El articulo se encuentra en Venta \n Hay stock");
-        break;
-
-    default:
-        console.log("Este articulo no se encuentra disponible");
-        break;
-    }
-articulo= prompt("ingresa los articulos que querés agregar a tu carrito: -EXIT para salir \n Hamburguesa \n Sandwiches \n Pizzas \n Ensalada \n Alcohol");
-}
-let precioConIva= precio* 1.19;
-console.log("Total a Pagar $" +precioConIva);
-
-}
-calcular();
-
-
-//selección de orden de compra
-let Objetos=prompt("Ingresa tu preferencia:")
-console.log("Selecciona tu preferencia");
-
+/*
 //objeto
 const miCarrito={
     nombre: ["Hamburguesa Hipster"],
@@ -160,8 +78,6 @@ console.log(miCarrito);
 console.log("Su selección es: " +miCarrito.nombre);
 
 //objetos constructores
-
-alert("haz seleccionado: "+miCarrito + precio );
 
 const checkout=["Sandwiches", "Pizzas", "Papas Fritas", "Ensalada", "Hamburguesa", "Cerveza", "Vino"];
 console.log (checkout);
@@ -188,6 +104,8 @@ function realizar (operacion,Totalprecios){
 realizar(sumarTotal,Totalprecios);
 console.log("La suma de todos tus productos es: $" +Totalprecios);
 console.table(Totalprecios);
+
+*/
 
 //Identificar usuario nuevo o Antiguo//
 
