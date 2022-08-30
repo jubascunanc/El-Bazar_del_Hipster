@@ -99,44 +99,73 @@ function calcularProductos(){
               console.log("Click evento");
               console.table(auxiliar)
               //console.table(comanda);
-            });
+            });  
+
     }
 
 }
+
 
 //Item en carrito de compras
 const contenedorProductos= document.getElementById("contenedor-productos");
 const contenedorCarrito= document.querySelector("#items");
 const contenedorFooter= document.querySelector("#footer");
 
-//Ejecución de Funciones
-pushProductos();
-exportarProducto();
 
-//Push productos
-let productos= comanda;
-let Producto=[]
+//Push productos/Función Productos
+let Producto=
 
 function pushProductos(){
+  
+let productos= comanda;
 productos.push(new Producto(1, 'Hamburguesa Hispter', 4500));
 productos.push(new Producto(2, 'Hamburguesa Clasica', 4700));
 productos.push(new Producto(3, 'Hamburguesa Salmon', 6800));
 productos.push(new Producto(4, 'Hamburguesa Vegana', 4700));
 productos.push(new Producto(5, 'Hamburguesa Alemana',5200));
+
 }
+
+pushProductos();
 
 function exportarProducto(){
   contenedorProductos.innerHTML= "";
 
-  productos.forEach(
-    (producto)=>{
-        let carta= crearCard(producto);
-        exportarProducto.append(carta);
-    }
-  );
+  let totalCarrito= 0;
 
+//reglon card
+elementosCarrito.forEach(
+  (elemento)=> {
+    let tablaCarrito=document.createElement("tr");
+    tablaCarrito.innerHTML=`
+    <td>${elemento.producto.id}</td>
+    <td>${elemento.producto.nombre}</td>
+    <td><input id="cantidad-producto-${elemento.producto.id}" type="number" value="${elemento.cantidad}" min="1" step="1"/></td>
+    <td>${elemento.producto.precio}</td>
+    <td>${elemento.producto.precio*elemento.cantidad}</td>
+    `;
+
+    totalCarrito+=elemento.producto.precio*elemento.cantidad;
+
+    contenedorProductos.append(tablaCarrito);
+
+    let inputforProduct=document.getElementById(`cantidad-producto-${elemento.producto.id}`);
+
+    inputforProduct.addEventListener("change", (e)=> {
+        alert ("Hay cambio");
+        let nuevaCantidad= e.target.value;
+        elemento.cantidad= nuevaCantidad;
+
+    });
+  }
+);
+
+if(elementosCarrito.length==0){
+  contenedorFooter.innerHTML=`<th scope="row" colspan="5">Carrito Vacio- Compra aquí!</th>`
+}
 }
 
+exportarProducto();
 
 function crearCard(producto){
 
@@ -160,15 +189,18 @@ imagen.className= "card-img-top";
 imagen.alt=auxiliar.nombre;
 
 
+
 //Evento variable carrito
 
 agregarBoton.onclick= (e)=>{
   alert(`Producto agregado! ${auxiliar.id} - ${auxiliar.nombre}`);
 
-let carritoCompra= new CarritoCompra(producto, 1);
+let carritoCompra= new carritoCompra(producto, 1);
 agregarBoton.push(carritoCompra);
 }
 
  return carta;
 
 }
+
+
