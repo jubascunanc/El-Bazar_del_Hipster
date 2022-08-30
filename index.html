@@ -30,6 +30,7 @@
   <script defer src="./src/Javascript/storage.js"></script>
 
 
+
   <title> El Bazar del Hipster </title>
 </head>
 
@@ -255,7 +256,56 @@ data-aos-easing="ease-in-sine">
 <!--                            Galeria eccomerce                            -->
 <!-- ----------------------------------------------------------------------- -->
 
+<!--carrito de compra-->
 
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Agregar producto
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Carrito de Compras</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="contenedor-productos" class="row row-cols-1 row-cols-md-3 g-4"></div>      
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <div class="contenedor-carrito "></div>
+            <tbody id="items"></tbody>
+            <tfoot>
+              <tr id="footer">
+              <th scope="row" colspan="5">Carrito Vacio- comienza a comprar</th>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="row" id="cards"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                            DOM manejador de objetos                     -->
+<!-- ----------------------------------------------------------------------- -->
 
      <div class="grillado" id="galeria">
 
@@ -263,66 +313,6 @@ data-aos-easing="ease-in-sine">
       <!--Descripción de comida-->
     <!--aqui va una cards-->
 
-   <!-- let galeria=document.getElementById("galeria");
-    for(const auxiliar of comanda ){
-        let cards=document.createElement("div");
-        cards.className="cards";
-        cards.innerHTML=`
-        <div class="card" style="width: 16rem;">
-        <img src= ${auxiliar.imagen} class="card-img-top" alt="...">
-                <h5 class="card-title">${auxiliar.nombre}</h5>
-                <p class="card-text" style= "color: black;">${auxiliar.precio}</p>
-                <a href="#" id = "btn" class="btn btn-primary">COMPRAR</a>
-            </div>
-        `;
-        galeria.append(cards);
-    }
--->
-<!--producto-->
-        
-        
-        <!--Descripción de comida-->
-      <!--aquí va una cards-->   
-
-<!--   let galeria=document.getElementById("galeria");
-      for(const auxiliar of comanda ){
-          let cards=document.createElement("div");
-          cards.className="cards";
-          cards.innerHTML=`
-          <div class="card" style="width: 16rem;">
-          <img src= ${auxiliar.imagen} class="card-img-top" alt="...">
-                  <h5 class="card-title">${auxiliar.nombre}</h5>
-                  <p class="card-text" style= "color: black;">${auxiliar.precio}</p>
-                  <a href="#" id = "btn" class="btn btn-primary">COMPRAR</a>
-              </div>
-          `;
-          galeria.append(cards);
-      }
-
--->   
-    <!--producto-->
-     
-           <!--Descripción de comida-->
-        <!--Aquí va una cards-->
-
- <!-- let galeria=document.getElementById("galeria");
-        for(const auxiliar of comanda ){
-            let cards=document.createElement("div");
-            cards.className="cards";
-            cards.innerHTML=`
-            <div class="card" style="width: 16rem;">
-            <img src= ${auxiliar.imagen} class="card-img-top" alt="...">
-                    <h5 class="card-title">${auxiliar.nombre}</h5>
-                    <p class="card-text" style= "color: black;">${auxiliar.precio}</p>
-                    <a href="#" id = "btn" class="btn btn-primary">COMPRAR</a>
-                </div>
-            `;
-            galeria.append(cards);
-        }      
--->       
-    <!--producto-->
-      
-    
         <!--Descripción de comida-->
   <!--aqui va una cards-->      
 
