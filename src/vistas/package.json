@@ -1,0 +1,22 @@
+{
+  "name": "el.bazar_del.hipster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jubascunanc/origin-master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jubascunanc/origin-master/issues"
+  },
+  "homepage": "https://github.com/jubascunanc/origin-master#readme",
+  "dependencies": {
+    "luxon": "^3.0.3"
+  }
+}

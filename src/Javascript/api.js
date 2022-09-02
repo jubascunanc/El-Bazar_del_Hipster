@@ -10,7 +10,7 @@ function obtenerDatos(){
         document.querySelector("#libros").innerHTML+=`
         <tr>
            <td>${libros.title}</td>
-           <td><img src="${libro.image}"></td>
+           <td><img src="${libros.image}"></td>
            </tr>
            `;
     });

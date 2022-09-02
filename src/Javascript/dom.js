@@ -126,7 +126,6 @@ productos.push(new Producto(5, 'Hamburguesa Alemana',5200));
 
 }
 
-pushProductos();
 
 function exportarProducto(){
   contenedorProductos.innerHTML= "";
