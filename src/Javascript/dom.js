@@ -1,6 +1,7 @@
 //DOM dir
 console.log(document.main);
 //GetElementByID
+let elementosCarrito=[]
 let auxiliar=document.getElementsByClassName("galeria");
 console.log(auxiliar.innerHTML);
 
@@ -55,17 +56,12 @@ const comanda=[
     
 
 //ConstructorClassById
-class cards{
-    constructor(nombre, precio, stock, unidades,imagen) {
-        this.nombre  = nombre.toLowerCase();
-        this.precio  = parseFloat(precio);
-        this.stock = stock;
-        this.unidades = unidades;
-        this.imagen= imagen;
-        this.id= id;
-    }
-}   
-
+class ProductoCarrito{
+    constructor(comanda, cantidad) {
+        this.comanda  = comanda;
+        this.cantidad = parseInt(cantidad);
+ }   
+}
 
 //Lista de compra
 calcularProductos();
@@ -98,6 +94,8 @@ function calcularProductos(){
           
               console.log("Click evento");
               console.table(auxiliar)
+            elementosCarrito.push(new ProductoCarrito(auxiliar,1));
+            exportarProducto();
               //console.table(comanda);
             });  
 
@@ -111,7 +109,7 @@ const contenedorProductos= document.getElementById("contenedor-productos");
 const contenedorCarrito= document.querySelector("#items");
 const contenedorFooter= document.querySelector("#footer");
 
-
+/*
 //Push productos/Función Productos
 let Producto=
 
@@ -125,47 +123,53 @@ productos.push(new Producto(4, 'Hamburguesa Vegana', 4700));
 productos.push(new Producto(5, 'Hamburguesa Alemana',5200));
 
 }
+*/
 
-
+//dibujar productos
 function exportarProducto(){
-  contenedorProductos.innerHTML= "";
+  contenedorCarrito.innerHTML= "";
 
   let totalCarrito= 0;
 
+
 //reglon card
+
+
 elementosCarrito.forEach(
   (elemento)=> {
-    let tablaCarrito=document.createElement("tr");
-    tablaCarrito.innerHTML=`
-    <td>${elemento.producto.id}</td>
-    <td>${elemento.producto.nombre}</td>
-    <td><input id="cantidad-producto-${elemento.producto.id}" type="number" value="${elemento.cantidad}" min="1" step="1"/></td>
-    <td>${elemento.producto.precio}</td>
-    <td>${elemento.producto.precio*elemento.cantidad}</td>
+    let renglonTablaCarrito=document.createElement("tr");
+    renglonTablaCarrito.innerHTML=`
+    <td>${elemento.comanda.id}</td>
+    <td>${elemento.comanda.nombre}</td>
+    <td><input id="cantidad-producto-${elemento.comanda.id}" type="number" value="${elemento.cantidad}" min="1" step="1"/></td>
+    <td>${elemento.comanda.precio}</td>
+    <td>${elemento.comanda.precio*elemento.cantidad}</td>
     `;
 
-    totalCarrito+=elemento.producto.precio*elemento.cantidad;
+  totalCarrito+=elemento.comanda.precio*elemento.cantidad;
 
-    contenedorProductos.append(tablaCarrito);
+    contenedorCarrito.append(renglonTablaCarrito);
 
-    let inputforProduct=document.getElementById(`cantidad-producto-${elemento.producto.id}`);
+    let inputforProduct=document.getElementById(`cantidad-producto-${elemento.comanda.id}`);
 
     inputforProduct.addEventListener("change", (e)=> {
-        alert ("Hay cambio");
         let nuevaCantidad= e.target.value;
         elemento.cantidad= nuevaCantidad;
-
+        exportarProducto();
     });
   }
 );
 
 if(elementosCarrito.length==0){
   contenedorFooter.innerHTML=`<th scope="row" colspan="5">Carrito Vacio- Compra aquí!</th>`
+}else{
+  contenedorFooter.innerHTML=`<th scope="row" colspan="5">Total de Compra:${totalCarrito}</th>`
 }
 }
 
 exportarProducto();
 
+/*
 function crearCard(producto){
 
 //boton
@@ -177,7 +181,7 @@ agregarBoton.innerText="Comprar aquí";
 let cuerpoCarrito=document.createElement("div");
 cuerpoCarrito.className="card-body";
 cuerpoCarrito.innerHTML=`
-<h5>${auxiliar.nombre}</h5>
+<h5>${auxiliar.nombre}</h5>D
 <p>${auxiliar.precio}</p>
 `;
 cuerpoCarrito.append(agregarBoton);
@@ -201,5 +205,5 @@ agregarBoton.push(carritoCompra);
  return carta;
 
 }
-
+*/
 

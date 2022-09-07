@@ -1,3 +1,4 @@
+/*
 function obtenerDatos(){
 
     const URLGET="https://api.itbook.store/1.0/new";
@@ -39,3 +40,4 @@ fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
 	.then(response => console.log(response.data.translations[0].translatedText))
 	.catch(err => console.error(err));
 
+*/
