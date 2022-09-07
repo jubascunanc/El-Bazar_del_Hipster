@@ -46,9 +46,9 @@ class Usuario {
     
     }
     
-    letusuarioLocalStorage = localStorage.getItem("usuario");
+    let usuarioLocalStorage = localStorage.getItem("usuario");
     
-    letusuarioAplicacion;
+    let usuarioAplicacion;
     
     if(usuarioLocalStorage != null) {
     
@@ -76,6 +76,6 @@ class Usuario {
     
     } else {
     
-    usuarioAplicacion = newUsuario();
+    usuarioAplicacion = new Usuario();
     
     }

@@ -1,21 +1,24 @@
-/*
+
 function obtenerDatos(){
 
-    const URLGET="https://api.itbook.store/1.0/new";
-    fetch(URLGET)
-  .then (resultado => resultado.json())
-  .then(data =>{
-    //console.log data
-    const libros=data.books;
-    libros.forEach(element => {
-        document.querySelector("#libros").innerHTML+=`
-        <tr>
-           <td>${libros.title}</td>
-           <td><img src="${libros.image}"></td>
-           </tr>
-           `;
-    });
-  })
+  const axios = require("axios");
+
+  const options = {
+    method: 'GET',
+    url: 'https://google-search3.p.rapidapi.com/api/v1/search/q=elon+musk',
+    headers: {
+      'X-User-Agent': 'desktop',
+      'X-Proxy-Location': 'EU',
+      'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
+      'X-RapidAPI-Host': 'google-search3.p.rapidapi.com'
+    }
+  };
+  
+  axios.request(options).then(function (response) {
+    console.log(response.data);
+  }).catch(function (error) {
+    console.error(error);
+  });
 }
 
 
@@ -35,9 +38,9 @@ const options = {
 	body: encodedParams
 };
 
+/*
 fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
 	.then(response => response.json())
 	.then(response => console.log(response.data.translations[0].translatedText))
 	.catch(err => console.error(err));
-
 */
