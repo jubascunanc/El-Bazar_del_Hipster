@@ -109,21 +109,7 @@ const contenedorProductos= document.getElementById("contenedor-productos");
 const contenedorCarrito= document.querySelector("#items");
 const contenedorFooter= document.querySelector("#footer");
 
-/*
-//Push productos/Función Productos
-let Producto=
 
-function pushProductos(){
-  
-let productos= comanda;
-productos.push(new Producto(1, 'Hamburguesa Hispter', 4500));
-productos.push(new Producto(2, 'Hamburguesa Clasica', 4700));
-productos.push(new Producto(3, 'Hamburguesa Salmon', 6800));
-productos.push(new Producto(4, 'Hamburguesa Vegana', 4700));
-productos.push(new Producto(5, 'Hamburguesa Alemana',5200));
-
-}
-*/
 
 //dibujar productos
 function exportarProducto(){
