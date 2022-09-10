@@ -109,6 +109,43 @@ const contenedorProductos= document.getElementById("contenedor-productos");
 const contenedorCarrito= document.querySelector("#items");
 const contenedorFooter= document.querySelector("#footer");
 
+window.addEventListener("load",()=>{
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: 'btn btn-success',
+      cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+  })
+  
+  swalWithBootstrapButtons.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Yes, delete it!',
+    cancelButtonText: 'No, cancel!',
+    reverseButtons: true
+  }).then((result) => {
+    if (result.isConfirmed) {
+      swalWithBootstrapButtons.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+    } else if (
+      /* Read more about handling dismissals below */
+      result.dismiss === Swal.DismissReason.cancel
+    ) {
+      swalWithBootstrapButtons.fire(
+        'Cancelled',
+        'Your imaginary file is safe :)',
+        'error'
+      )
+    }
+  })
+})
+
 
 
 //dibujar productos
@@ -155,41 +192,6 @@ if(elementosCarrito.length==0){
 
 exportarProducto();
 
-/*
-function crearCard(producto){
-
-//boton
-let agregarBoton=document.createElement("button");
-agregarBoton.className="btn btn-primary";
-agregarBoton.innerText="Comprar aquí";
-
-//card body
-let cuerpoCarrito=document.createElement("div");
-cuerpoCarrito.className="card-body";
-cuerpoCarrito.innerHTML=`
-<h5>${auxiliar.nombre}</h5>D
-<p>${auxiliar.precio}</p>
-`;
-cuerpoCarrito.append(agregarBoton);
-
-let imagen=document.createElement("img");
-imagen.src= auxiliar.imagen;
-imagen.className= "card-img-top";
-imagen.alt=auxiliar.nombre;
-
-
-
-//Evento variable carrito
-
-agregarBoton.onclick= (e)=>{
-  alert(`Producto agregado! ${auxiliar.id} - ${auxiliar.nombre}`);
-
-let carritoCompra= new carritoCompra(producto, 1);
-agregarBoton.push(carritoCompra);
-}
-
- return carta;
-
-}
-*/
-
+document.getElementById("ir-carrito").addEventListener("click",()=>{
+  window.location.href="http://127.0.0.1:5500/src/paginas/carrito.html"
+})

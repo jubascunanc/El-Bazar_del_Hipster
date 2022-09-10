@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="../css/styles.css">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer src="./src/Javascript/codigo.js"></script>
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <title> Checkout </title>
 </head>
 
@@ -98,40 +100,36 @@
 <h2>Revisa tus articulos</h2>
 
 <!--Ticket de venta-->
-<div class="modal-dialog modal-lg">... </div>
-<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
+<!--Aqui va un formulario de usuario-->
+
+<!-- Button trigger modal -->
+
+<button type="button" class="btn btn-primary" id="levanta-formulario" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Datos personales
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggleLabel">Orden de Compra</h5>
+        <h5 class="modal-title" id="exampleModalLabel">formulario usuario</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Show a second modal and hide this one with the button below.
+        <input type="text" value="nombre" name="Nombre" id="nombre-usuario">Escribe tu nombre:</input>
+        <input type="text" value="edad" name="Edad" id="edad-usuario">Tu edad:</input>
+        <input type="text" value="correo" name="Correo" id="correo-usuario">Aquí tu correo:</input>
+        <input type="text" value="direccion" name="Direccion">Tu direccion:</input>
+        <input type="text" value="entrega" name="Entrega">Tipo de entrega:</input>
       </div>
       <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="guardar-cambios" >Guardar cambios</button>
       </div>
     </div>
   </div>
 </div>
-<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalToggleLabel2">Ingresar datos</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Hide this modal and show the first with the button below.
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Volver al Principio</button>
-      </div>
-    </div>
-  </div>
-</div>
-<a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Abrir Orden de Compra</a>
 
   <!-- ----------------------------------------------------------------------- -->
   <!--                                  fotter wesite                            -->
@@ -164,6 +162,7 @@
 <script>
   AOS.init();
 </script>
+<script defer src="../Javascript/carrito.js"></script>
 </body>
 
 </html>
