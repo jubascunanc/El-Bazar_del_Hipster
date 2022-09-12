@@ -119,18 +119,18 @@ window.addEventListener("load",()=>{
   })
   
   swalWithBootstrapButtons.fire({
-    title: 'Are you sure?',
-    text: "You won't be able to revert this!",
+    title: 'Eres Mayor de Edad?',
+    text: "Estas de acuerdo con continuar!",
     icon: 'warning',
     showCancelButton: true,
-    confirmButtonText: 'Yes, delete it!',
-    cancelButtonText: 'No, cancel!',
+    confirmButtonText: 'Si, Soy Mayor de Edad !',
+    cancelButtonText: 'No, Soy Menor de Edad!',
     reverseButtons: true
   }).then((result) => {
     if (result.isConfirmed) {
       swalWithBootstrapButtons.fire(
-        'Deleted!',
-        'Your file has been deleted.',
+        'Aceptado!',
+        'Eres Mayor de Edad.',
         'success'
       )
     } else if (
@@ -138,8 +138,8 @@ window.addEventListener("load",()=>{
       result.dismiss === Swal.DismissReason.cancel
     ) {
       swalWithBootstrapButtons.fire(
-        'Cancelled',
-        'Your imaginary file is safe :)',
+        'Rechazado',
+        'Eres Menor de edad :(s',
         'error'
       )
     }

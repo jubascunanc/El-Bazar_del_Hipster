@@ -39,6 +39,8 @@ class Usuario {
     document.getElementById("nombre-usuario").value = usuarioAplicacion.nombre;
     document.getElementById("edad-usuario").value = usuarioAplicacion.edad;
     document.getElementById("correo-usuario").value = usuarioAplicacion.correoElectronico;
+    document.getElementById("direccion-entrega").value = usuarioAplicacion.direccionEnvio;
+    document.getElementById("entrega-pedido").value = usuarioAplicacion.entrega;
 
     } else {
 
@@ -52,9 +54,13 @@ class Usuario {
     let nombreUsuario= document.getElementById("nombre-usuario").value
     let edadUsuario=  document.getElementById("edad-usuario").value
     let correoElectronico= document.getElementById("correo-usuario").value
+    let direccionEnvio= document.getElementById("direccion-entrega").value
+    let entrega= document.getElementById("entrega-pedido").value
     usuarioAplicacion.nombre=nombreUsuario
     usuarioAplicacion.edad=edadUsuario
     usuarioAplicacion.correoElectronico=correoElectronico
+    usuarioAplicacion.direccionEnvio=direccionEnvio
+    usuarioAplicacion.entrega=entrega
     localStorage.setItem("usuario",JSON.stringify(usuarioAplicacion));
     myModal.show(modalToggle);
    })
