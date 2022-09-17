@@ -21,6 +21,7 @@ function obtenerDatos(){
   });
 }
 
+3
 
 const encodedParams = new URLSearchParams();
 encodedParams.append("q", "We are learning Javascript!");
@@ -37,10 +38,3 @@ const options = {
 	},
 	body: encodedParams
 };
-
-/*
-fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
-	.then(response => response.json())
-	.then(response => console.log(response.data.translations[0].translatedText))
-	.catch(err => console.error(err));
-*/

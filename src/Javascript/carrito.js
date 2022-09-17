@@ -64,3 +64,12 @@ class Usuario {
     localStorage.setItem("usuario",JSON.stringify(usuarioAplicacion));
     myModal.show(modalToggle);
    })
+
+ console.log("Carrito abandonado")
+
+   //Promises & ASYNC
+   setTimeout(()=>{
+    console.log("Tu carrito esta Lleno")
+   }, 3000);
+
+ console.log("Carrito Vacio ")
