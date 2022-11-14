@@ -21,7 +21,7 @@ function obtenerDatos(){
   });
 }
 
-3
+obtenerDatos();
 
 const encodedParams = new URLSearchParams();
 encodedParams.append("q", "We are learning Javascript!");
