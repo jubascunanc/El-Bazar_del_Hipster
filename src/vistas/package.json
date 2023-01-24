@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/jubascunanc/origin-master#readme",
   "dependencies": {
-    "luxon": "^3.0.3"
+    "luxon": "^3.2.1"
   }
 }
